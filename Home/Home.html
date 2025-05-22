@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chăm sóc sức khỏe</title>
   <link rel="stylesheet" href="home.css">
+  <script src="home.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -15,12 +16,21 @@
     <!-- Menu Dropdown -->
     <nav class="dropdown-menu">
         <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Dịch vụ</a></li>
-            <li><a href="#">Bác sĩ</a></li>
-            <li><a href="#">Tư vấn</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="#muc-tieu">Về chúng tôi</a></li>
+            <li><a href="#dich-vu">Dịch vụ</a></li>
+            <li><a href="#">Độ ngũ y, Bác sĩ</a></li>
+            <li><a href="#">Tin tức</a></li>
         </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+        <li><a href="#"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+        <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+        <li><a href="#"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -28,7 +38,7 @@
   <div class="container">
 
     <!-- Giới thiệu -->
-    <section class="intro">
+    <section class="intro" id="intro">
       <h2>Luôn bên bạn</h2>
       <h3><span>Vì sức khỏe của bạn</span></h3>
       <div class="stats">
@@ -48,7 +58,7 @@
     </section>
 
     
-    <section class="about">
+    <section class="about" id="muc-tieu">
       <h2>VỀ CHÚNG TÔI</h2>
       <div class="about-content">
         <img src="../IMAGES/muctieuL.png" alt="Bác sĩ nữ" class="about-img">
@@ -61,7 +71,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="xu-menh">
       <div class="about-content reverse">
         <img src="../IMAGES/xumenhL.png" alt="Bác sĩ nữ" class="about-img two">
         <div class="about-text">
@@ -75,7 +85,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="xu-menh">
       <div class="about-content">
         <img src="../IMAGES/tamnhinL.png" alt="Bác sĩ nữ" class="about-img three">
         <div class="about-text">
@@ -90,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section class="why-choose">
+    <section class="why-choose" id="tai-sao">
       <h3 class="why-title">Tại sao chọn chúng tôi</h3>
       <div class="why-content">
         <div class="why-column">
@@ -104,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="main-services">
+    <section class="main-services" id="dich-vu">
       <h2 class="section-title">
         <span>Dịch Vụ Chính</span> Của Chúng Tôi
       </h2>
@@ -146,9 +156,82 @@
 
     </section>
 
+    <section class="testimonial" id="danh-gia">
+  <h2><span>Khách hàng của chúng tôi nói gì</span></h2>
+  <p>Được đánh giá 4,7 / 5 dựa trên 28.370 đánh giá.<br>Hiển thị các đánh giá 4 & 5 sao của chúng tôi</p>
+
+  <div class="testimonial-box">
+    <button class="arrow left">&#8249;</button>
+
+    <div class="testimonial-content">
+      <div class="quote-icon">❝</div>
+      <p class="feedback">
+        “Tính năng theo dõi sức khỏe cá nhân rất hữu ích. Tôi có thể dễ dàng ghi lại và theo dõi các chỉ số quan trọng của mình.”
+      </p>
+      <div class="user-info">
+        <img src="../IMAGES/avatar1L.png" alt="Avatar" class="avatar">
+        <div>
+          <strong>Vũ A</strong><br>
+          <span>Người dùng</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right">&#8250;</button>
+  </div>
+</section>
+
+
+
 
 
   </div> <!-- Kết thúc container -->
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Core Health</h2>
+    <p>Sức khỏe cốt lõi</p>
+    <hr />
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>Liên Hệ</h3>
+      <p>📞 +1012 3456 789</p>
+      <p>📧 demo@gmail.com</p>
+      <p> 132 Buôn Ma Thuột, Đắk Lắk Việt Nam</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Core Health</h3>
+      <p><a href="#muc-tieu">Về chúng tôi</a></p>
+      <p>Liên Hệ</p>
+      <p>Tin tức</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Pháp Lý</h3>
+      <p>Chính sách & Bảo mật</p>
+      <p>Điều khoản & Dịch vụ</p>
+      <p>Điều khoản sử dụng</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Liên Kết</h3>
+      <p><img src="../IMAGES/facebookL.png" alt="Facebook" class="icon"> Facebook</p>
+      <p><img src="../IMAGES/instaL.png" alt="Instagram" class="icon"> Instagram</p>
+      <p><img src="../IMAGES/tiktokL.png" alt="TikTok" class="icon"> Tik Tok</p>
+    </div>
+  </div>
+
+  <div class="footer-subscribe">
+    <h3>Đăng ký nhận bản tin</h3>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Nhập địa chỉ email của bạn" required />
+      <button type="submit">Đăng ký</button>
+    </form>
+    <p class="note">*Chúng tôi sẽ gửi cho bạn bản cập nhật hàng tuần để quản lý công cụ tốt hơn</p>
+  </div>
+</footer>
 
 </body>
 
