@@ -43,6 +43,7 @@ body {
   border-radius: 0px 0px 20px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
 .header:hover {
   border-bottom-left-radius: 0;
@@ -352,10 +353,13 @@ body {
   font-weight: bold;
   color: #0077cc;
   margin-bottom: 30px;
+  font-family: Poppins;
 }
 
 .section-title span {
   color: #4a90e2;
+  font-family: Poppins;
+
 }
 
 .service-box {
