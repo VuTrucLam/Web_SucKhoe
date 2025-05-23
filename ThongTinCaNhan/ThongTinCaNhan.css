@@ -145,3 +145,18 @@ header .fa-solid.fa-bell {
 .bottom-nav a:hover {
   color: #007bff; /* Màu khi hover (có thể tùy chỉnh) */
 }
+/*nút lưu*/
+#saveBtn {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#saveBtn:hover {
+  background-color: #2e6dc2;
+}

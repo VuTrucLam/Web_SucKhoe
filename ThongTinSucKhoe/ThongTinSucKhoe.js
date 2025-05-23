@@ -11,4 +11,19 @@ function enableEdit() {
   if (inputs.length > 0) {
     inputs[0].focus();
   }
+// Hiện nút lưu
+  saveBtn.style.display = "block";
 }
+
+// Hàm lưu thông tin
+  document.getElementById("saveBtn").addEventListener("click", function () {
+    const inputs = document.querySelectorAll(".menu input");
+    inputs.forEach(input => {
+      input.disabled = true; // Khoá lại
+    });
+
+    // Ẩn nút lưu
+    this.style.display = "none";
+
+    alert("Thông tin đã được lưu."); // Tuỳ chọn thông báo  (chưa gửi server)
+  });
