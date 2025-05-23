@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #6ca6f7;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+header .fa-bell {
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+  font-size: 18px;
+}
+
+.avatar-wrapper {
+  text-align: center;
+  margin-top: -40px;
+  position: relative;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(228, 221, 221, 0.367);
+  cursor: pointer;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 70%;
+  right: -8.3rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menu {
+  margin: 30px 20px 100px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px 20px 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.menu label {
+  font-size: 14px;
+  color: #333;
+}
+
+.menu input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f5f9ff;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #dce9ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bottom-nav i {
+  font-size: 22px;
+  color: #6ca6f7;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav i:hover {
+  color: #497edc;
+}
