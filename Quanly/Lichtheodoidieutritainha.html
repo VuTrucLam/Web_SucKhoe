@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Theo Dõi Điều Trị Tại Nhà</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css1.css">
+</head>
+<body class="lichtheodoi">
+  <div class="lichtheodoi1">
+    <h1 class="lichtheodoi2">Lịch Theo Dõi Điều Trị Tại Nhà</h1>
+
+    <!-- Thời gian -->
+    <div class="time_1">
+      <h2 class="time_2">Thời Gian</h2>
+      <div class="time_3">
+        <div class="time_4">
+          <label class="time_5">Từ ngày</label>
+          <input type="date" class="time_6">
+        </div>
+        <div class="flex-1">
+          <label class="time_7">Đến ngày</label>
+          <input type="date" class="time_8">
+        </div>
+      </div>
+    </div>
+
+    <!-- Trạng thái sức khỏe -->
+    <div class="ttsk_1">
+      <h2 class="ttsk_2">Trạng Thái Sức Khỏe</h2>
+      <textarea class="ttsk3" rows="4" placeholder="Ghi lại cảm nhận, triệu chứng, hoặc trạng thái sức khỏe..."></textarea>
+    </div>
+
+    <!-- Theo dõi chỉ số -->
+    <div class="th_1">
+      <h2 class="th_2">Theo Dõi Chỉ Số</h2>
+      <div class="th_3">
+        <div>
+          <label class="th_4">Nhiệt độ (°C)</label>
+          <input type="number" step="0.1" class="th_5" placeholder="Ví dụ: 36.5">
+        </div>
+        <div>
+          <label class="th_6">Huyết áp (mmHg)</label>
+          <input type="text" class="th_7" placeholder="Ví dụ: 120/80">
+        </div>
+        <div>
+          <label class="th_8">Nhịp tim (bpm)</label>
+          <input type="number" class="th_9" placeholder="Ví dụ: 75">
+        </div>
+        <div>
+          <label class="th_10">Khác</label>
+          <input type="text" class="th_11" placeholder="Ghi chú khác...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Chế độ dinh dưỡng -->
+    <div class="dd_1">
+      <h2 class="dd_2">Chế Độ Dinh Dưỡng</h2>
+      <p class="dd_3">Xem chi tiết chế độ dinh dưỡng phù hợp.</p>
+      <a href="https://example.com/nutrition" target="_blank" class="dd_6">Xem Chế Độ Dinh Dưỡng</a>
+    </div>
+
+    <!-- Uống thuốc -->
+    <div class="ut_1">
+      <h2 class="ut_4">Uống Thuốc</h2>
+      <p class="ut_2">Theo dõi lịch uống thuốc của bạn.</p>
+      <a href="https://example.com/medication" target="_blank" class="ut_3">Xem Lịch Uống Thuốc</a>
+    </div>
+    
+
+    <!-- Hoạt động thể chất -->
+     <!-- Uống thuốc -->
+    <div class="ut_5">
+      <h2 class="ut_6">Luyện tập thể thao</h2>
+      <p class="tt_1">Xem chi tiết về bài tập thể thao của bạn</p>
+      <a href="" target="_blank" class="tt_2">Xem Lịch Uống Thuốc</a>
+    </div>
+
+
+    <div class="k1">
+      <h2 class="k2">Lịch khám bệnh</h2>
+      <p class="k3">Xem chi tiết về lịch khám bệnh của bạn</p>
+      <a href="" target="_blank" class="k4">Xem Lịch Uống Thuốc</a>
+    </div>
+
+    
+    <!-- Lưu ý của bác sĩ -->
+    <div class="lichtheodoi1">
+      <h2 class="lichtheodoi2">Lưu Ý Của Bác Sĩ</h2>
+      <ul class="lichtheodoi3">
+        <li>Nghỉ ngơi đầy đủ, tránh làm việc quá sức.</li>
+        <li>Uống đủ nước (2-3 lít mỗi ngày).</li>
+        <li>Liên hệ bác sĩ nếu có triệu chứng bất thường.</li>
+      </ul>
+      <textarea class="luu1" rows="4" placeholder="Thêm lưu ý khác từ bác sĩ..."></textarea>
+    </div>
+
+    <!-- Nút lưu -->
+    <div class="luu">
+      <button class="llu">Lưu Thông Tin</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript để xử lý sự kiện lưu (mô phỏng)
+    document.querySelector('button').addEventListener('click', () => {
+      alert('Thông tin đã được lưu!');
+    });
+  </script>
+</body>
+</html>

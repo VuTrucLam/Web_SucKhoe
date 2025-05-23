@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Luyện Tập Thể Thao</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Lịch biểu tập luyện -->
+    <section class="sport-schedule-section">
+      <h1 class="section-title">Lịch Biểu Tập Luyện</h1>
+      <div class="schedule-content">
+        <div class="schedule-item">
+          <label class="schedule-label">Ngày</label>
+          <input type="date" class="schedule-input">
+        </div>
+        <div class="schedule-item">
+          <label class="schedule-label">Buổi</label>
+          <select class="schedule-input">
+            <option value="morning">Sáng</option>
+            <option value="afternoon">Chiều</option>
+            <option value="evening">Tối</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh sách bài tập -->
+   <section class="sport-schedule-section">
+  <h2 class="section-title">Danh Sách Bài Tập</h2>
+  <div class="exercises-content">
+    <div class="exercise-card">
+      <div class="exercise-image">
+        <img src="./quanly/b1.jpg" alt="">
+      </div>
+      <div class="exercise-info">
+        <h3 class="exercise-title">Flat Belly & Weight Loss Plan</h3>
+        <p class="exercise-level">Beginner • 12 min</p>
+        <span class="exercise-duration">60 Days</span>
+      </div>
+    </div>
+    <div class="exercise-card">
+      <div class="exercise-image">
+        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+        <img src="./quanly/b1.jpg" alt="Video thumbnail" class="exercise-thumbnail">
+        </a>
+      </div>
+      <div class="exercise-info">
+        <h3 class="exercise-title">Sexy Curve Plan</h3>
+        <p class="exercise-level">Beginner • 14 min</p>
+        <span class="exercise-duration">28 Days</span>
+      </div>
+    </div>
+    <div class="exercise-card">
+      <div class="exercise-image" style=>
+        <img src="./quanly/b1.jpg" alt="">
+      </div>
+      <div class="exercise-info">
+        <h3 class="exercise-title">Total-Body Toning</h3>
+        <p class="exercise-level">Intermediate • 18 min</p>
+        <span class="exercise-duration">30 Days</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Biểu đồ tiến độ -->
+    <section class="sport-schedule-section">
+      <h2 class="section-title">Biểu Đồ Tiến Độ</h2>
+      <p class="progress-text">Xem thống kê tiến độ tập luyện của bạn.</p>
+      <a href="#" class="progress-link">Xem Biểu Đồ Tiến Độ</a>
+    </section>
+
+    <!-- Phản hồi -->
+    <section class="sport-schedule-section">
+      <h2 class="section-title">Phản Hồi</h2>
+      <div class="feedback-content">
+        <textarea class="feedback-textarea" rows="4" placeholder="Ghi lại cảm nhận của bạn..."></textarea>
+        <div class="feedback-checkbox">
+          <input type="checkbox" id="completed" class="feedback-input">
+          <label for="completed" class="feedback-label">Đã hoàn thành</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nút lưu -->
+    <div class="save-section">
+      <button class="save-btn">Lưu Thông Tin</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.save-btn').addEventListener('click', () => {
+      alert('Thông tin đã được lưu!');
+    });
+    document.querySelector('.add-exercise-btn').addEventListener('click', () => {
+      alert('Đã thêm bài tập!');
+    });
+  </script>
+</body>
+</html>
