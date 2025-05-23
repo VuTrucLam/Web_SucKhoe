@@ -197,4 +197,55 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 100px); /* trừ lề trái + phải */
+    height: calc(100vh - 100px);
+    margin: 50px auto; /* tạo khoảng cách 50px lề trái/phải + trên/dưới */
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-container::before {
+    content: '';
+    flex: 1;
+    background: url('../IMAGES/signinL.png') no-repeat center center / cover;
+  }
+
+  .wave-top,
+  .wave-bottom {
+    display: none;
+  }
+
+  .login-form {
+    flex: 1;
+    padding: 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+  }
+  .register-link {
+    margin-bottom: 20px;
+  }
+  .register-link a {
+  color: #2a73f0; /* màu xanh đậm */
+  margin-left: 550px;
+  font-size: 20px;
+}
+
+}
+
 
