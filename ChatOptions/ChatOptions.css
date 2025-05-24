@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  padding: 30px 20px 80px;
+}
+
+.logo {
+  width: 320px;
+  margin: 30px auto 30px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-1 {
+  background-color: #458ff6;
+  color: #fff;
+}
+.btn-1:hover,
+.btn-1:active {
+  background-color: #2f6cd9;
+}
+
+.btn-2 {
+  background-color: #eceff8;
+  color: #2F80ED;
+}
+.btn-2:hover,
+.btn-2:active {
+  background-color: #cbd6f5;
+}
+
+.bottom-nav {
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #E4E9FA;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px 0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.bottom-nav ul {
+  list-style: none; /* Bỏ dấu đầu dòng */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Hiển thị các mục theo hàng ngang */
+  width: 100%;
+  justify-content: space-around;
+}
+
+.bottom-nav li {
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.bottom-nav a {
+  text-decoration: none; /* Bỏ gạch chân liên kết */
+  color: #333; /* Màu chữ */
+  font-size: 14px; /* Kích thước chữ */
+  display: flex; /* Sử dụng flex để căn chỉnh icon và chữ */
+  flex-direction: column; /* Icon và chữ xếp dọc */
+  align-items: center; /* Căn giữa */
+}
+
+.bottom-nav img {
+  width: 24px; /* Kích thước icon */
+  height: 24px;
+  margin-bottom: 5px; /* Khoảng cách giữa icon và chữ */
+}
+
+.bottom-nav a:hover {
+  color: #007bff; /* Màu khi hover (có thể tùy chỉnh) */
+}
