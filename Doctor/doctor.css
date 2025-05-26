@@ -1,0 +1,432 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.menu-wrapper {
+  background-color: #007bff;
+}
+
+/* Khối nền + bác sĩ */
+.doctor-section {
+  width: 100%;
+  height: 400px;
+  background-color: #007BFF; /* Xanh dương nền */
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.doctor-content {
+  display: flex;
+  flex-direction: column; /* Mobile: chữ trên, ảnh dưới */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.doctor-text {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.doctor-text h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family:serif;
+
+}
+
+.doctor-text p {
+  font-size: 15.5px;
+  margin: 20px;
+  font-family:serif;
+  text-align: center;
+}
+
+/* Ảnh bác sĩ */
+.doctors {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-section {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  /* margin-bottom: 80px; */
+}
+
+.carousel-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #003b94;
+  font-family: Poppins;
+  background: linear-gradient(to right, #4A9BDA, #193E9E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #3c5f9f;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(to top, #317DF1,#96BFF5, #ffff);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-item h3 {
+  color: #003b94;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.carousel-item p {
+  color: #333;
+  font-size: 18px;
+  text-align: justify; 
+  font-family: Poppins;
+
+}
+
+.carousel-dots {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #005dff;
+}
+
+.fields-section {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  /* margin-bottom:90px; */
+}
+
+.fields-section h2{
+  text-align: center;
+  color: #003b94;
+  margin-bottom: 30px;
+}
+
+.fields-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../IMAGES/backgroundlinhvucL.jpg'); /* ảnh nền */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.fields-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Mỗi phần lĩnh vực - không cần khung riêng */
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.field img {
+  width: 25%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.field-text {
+  text-align: center;
+}
+
+.field-text h3 {
+  font-size: 20px;
+  color: #003b94;
+  margin: 10px 0 5px;
+}
+
+.field-text p {
+  font-size: 16px;
+  color: #333;
+}
+.field-link {
+  text-decoration: none;
+  color: #003b94;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+}
+
+
+.doctors-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.doctors-section h2{
+  font-family: Pridi;
+  font-size: 24px;
+  color: #003b94;
+  padding: 20px;
+}
+
+.doctors-section h3{
+  font-family: Pridi;
+  font-size: 20px;
+  text-align: center;
+  color: #003b94;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #003b94;
+  margin: 0 1rem;
+}
+
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  /* margin-bottom: 90px; */
+}
+
+.doctor-card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.card-front h3 {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: Pridi;
+    color: #003b94;
+}
+
+.card-back h3 {
+  text-align: center;
+  font-family: Pridi;
+  font-size: 24px;
+  padding: 20px;
+  color: #003b94;
+}
+
+.card-back p {
+  font-family: Pridi;
+  font-size: 16px;
+  padding: 10px;
+  color: #003b94;
+}
+
+.card-back {
+  background: #E4E9FA;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.card-back button {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #007acc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.doctor-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Responsive Desktop */
+@media (min-width: 768px) {
+  .doctor-section {
+    height: 300px;
+  }
+
+  .doctor-content {
+    flex-direction: row; /* Desktop: chữ trái, ảnh phải */
+    gap: 550px;
+  }
+
+  .doctor-text {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .doctor-text h2 {
+    font-size: 38px;
+  }
+
+  .doctor-text p {
+    font-size: 28px;
+  }
+
+  .doctors {
+    width: 800px;
+  }
+
+  .carousel-section h2 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+  font-size: 25px;
+  margin-bottom: 40px;
+  }
+
+  .carousel-item h3 {
+    font-size: 24px;
+  }
+
+  .carousel-item p {
+    font-size: 23px;
+  }
+
+  .carousel-section {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .field {
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .field:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+
+  .field img {
+    width: 10%;
+  }
+
+  .field-text {
+    width: 50%;
+  }
+
+  .field-text h3 {
+    font-size: 24px;
+  }
+
+  .field-text p {
+    font-size: 18px;
+  }
+  .doctors-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .doctors-section h2{
+  font-size: 30px;
+}
+
+.doctors-section h3{
+  font-size: 24px;
+}
+  .card-back h3 {
+    font-size: 27px;
+  }
+
+  .card-back p {
+    font-size: 18px;
+  }
+}
