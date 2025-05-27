@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theo Dõi Sức Khỏe</title>
+  <link rel="stylesheet" href="TheoDoiSucKhoe.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="TheoDoiSucKhoe.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h2>Theo Dõi Sức Khoẻ</h2>
+    <div class="notification">🔔</div>
+  </div>
+
+  <!-- Theo dõi bước đi -->
+  <div class="container">
+    <h1>Theo Dõi Bước Đi</h1>
+    <div class="chart-container">
+      <canvas id="stepsChart"></canvas>
+    </div>
+    <p class="steps-text">Đã đi: <span id="stepsCount">0</span> bước</p>
+  </div>
+
+  <!-- Nhịp tim -->
+  <div class="container">
+    <div class="heart-rate-header">
+      <div class="heart-rate-info">
+        <h2>Nhịp Tim</h2>
+        <p class="bpm"><span id="heartRateValue">--</span></p>
+      </div>
+      <div class="heart-icon">❤️</div>
+    </div>
+    <canvas id="heartChart" width="280" height="150"></canvas>
+  </div>
+
+  <!-- Theo dõi lượng nước -->
+  <div class="container water-tracker">
+    <h2>Theo Dõi Lượng Nước</h2>
+    <div class="water-section">
+      <div class="chart">
+        <div class="bars" id="bars"></div>
+        <p id="total">0 lít</p>
+      </div>
+      <div style="display: flex; align-items: flex-end;">
+        <div class="hours" id="hours"></div>
+        <div class="glass">
+          <div class="water" id="water" style="height: 0%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>
