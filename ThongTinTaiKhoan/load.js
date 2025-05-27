@@ -1,3 +1,11 @@
+function formatDate(dateStr) {
+  const date = new Date(dateStr);
+  if (isNaN(date)) return ''; // tránh lỗi
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  return `${day}/${month}/${year}`;
+}
 window.addEventListener('DOMContentLoaded', async () => {
   const token = localStorage.getItem('token');
   if (!token) {
@@ -23,7 +31,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('name').value = user.name || '';
     document.getElementById('email').value = user.email || '';
     document.getElementById('phone').value = user.phone || '';
-    document.getElementById('dob').value = user.dob || '';
+    document.getElementById('dob').value = formatDate(user.birth_date);
     document.getElementById('gender').value = user.gender || '';
     document.getElementById('role').value = user.role || '';
 
