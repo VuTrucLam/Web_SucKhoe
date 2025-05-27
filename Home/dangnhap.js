@@ -14,8 +14,12 @@ document.getElementById('login-form').addEventListener('submit', async function 
     const data = await res.json();
 
     if (res.ok) {
+      // ✅ Lưu token vào localStorage
+      localStorage.setItem('token', data.token);
       alert('Đăng nhập thành công!');
-      window.location.href = 'home.html'; // Chuyển đến trang chính
+
+      // ✅ Chuyển sang trang chính (hoặc Thông tin tài khoản)
+      window.location.href = 'home.html';
     } else {
       alert(data.error || 'Đăng nhập thất bại!');
     }
