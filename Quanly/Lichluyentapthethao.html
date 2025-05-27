@@ -3,103 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lịch Luyện Tập Thể Thao</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css2.css">
+  <title>Lịch Biểu Tập Luyện</title>
+  <link rel="stylesheet" href="theothao.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="header">
+    <img src="../IMAGES/logoL.png" alt="Logo" class="logo">
+    <div class="dropdown-menu">
+      <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="Lichtheodoidieutritainha.html">Lịch biểu tập luyện</a></li>
+            <li><a href="lichkhambenh.css">Lich luyện tập thể thao</a></li>
+            <li><a href="lichdinhduong.html">Lịch dinh dưỡng</a></li>
+            <li><a href="lichuongthuoc.html">Lịch dinh dưỡng</a></li>
+            
+        </ul>
+    </div>
+  </div>
 
-    <!-- Lịch biểu tập luyện -->
-    <section class="sport-schedule-section">
-      <h1 class="section-title">Lịch Biểu Tập Luyện</h1>
-      <div class="schedule-content">
-        <div class="schedule-item">
-          <label class="schedule-label">Ngày</label>
-          <input type="date" class="schedule-input">
+  <div class="container">
+    <div class="intro">
+      <h1>Lịch Biểu Tập Luyện</h1>
+    </div>
+
+    <div class="box lichtheodoi">
+      <!-- <h2 class="lichtheodoi1">Lịch Biểu Tập Luyện</h2> -->
+      <div class="time_3">
+        <div>
+          <label class="time_5">Ngày</label>
+          <input type="date" class="time_6">
         </div>
-        <div class="schedule-item">
-          <label class="schedule-label">Buổi</label>
-          <select class="schedule-input">
-            <option value="morning">Sáng</option>
-            <option value="afternoon">Chiều</option>
-            <option value="evening">Tối</option>
+        <div>
+          <label class="time_5">Buổi</label>
+          <select class="time_6">
+            <option>Sáng</option>
+            <option>Chiều</option>
+            <option>Tối</option>
           </select>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Danh sách bài tập -->
-   <section class="sport-schedule-section">
-  <h2 class="section-title">Danh Sách Bài Tập</h2>
-  <div class="exercises-content">
-    <div class="exercise-card">
-      <div class="exercise-image">
-        <img src="./quanly/b1.jpg" alt="">
-      </div>
-      <div class="exercise-info">
-        <h3 class="exercise-title">Flat Belly & Weight Loss Plan</h3>
-        <p class="exercise-level">Beginner • 12 min</p>
-        <span class="exercise-duration">60 Days</span>
+    <div class="box lichtheodoi">
+      <h2 class="lichtheodoi1">Danh Sách Bài Tập</h2>
+      <ul class="lichtheodoi3">
+        <li>
+          <div class="bt1">
+            <div class="bta1">
+              <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+                 <img src="../IMAGES/d1.jpg" alt="" class="bta1-img">
+              </a>
+             
+            </div>
+            <div class="info">
+              <h3 class="title">Flat Belly </h3>
+              <p class="level">Beginner • 12 min</p>
+              <p class="time8">60 Days</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="bt1">
+            <div class="bta1">
+              
+              <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+                <img src="../IMAGES/theduc_d.jpg" alt="" class="bta1-img">
+              </a>
+            </div>
+            <div class="info">
+              <h3 class="title">Flat Belly </h3>
+              <p class="level">Beginner • 12 min</p>
+              <p class="time8">60 Days</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="bt1">
+            <div class="bta1">
+              
+              <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+                <img src="../IMAGES/theducz-2.jpg" alt="" class="bta1-img">
+              </a>
+            </div>
+            <div class="info">
+              <h3 class="title">Flat Belly </h3>
+              <p class="level">Beginner • 12 min</p>
+              <p class="time8">60 Days</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="box lichtheodoi">
+      <h2 class="lichtheodoi1">Biểu Đồ Tiến Độ</h2>
+      <p class="thongke">Xem thống kê tiến độ tập luyện của bạn.</p>
+      <a href="#" class="link">Xem Biểu Đồ Tiến Độ</a>
+    </div>
+
+    <div class="box lichtheodoi">
+      <h2 class="lichtheodoi1">Phản Hồi</h2>
+      <div class="feedback">
+        <input type="checkbox" class="feedback-input" id="completed">
+        <label for="completed">Đã hoàn thành</label>
       </div>
     </div>
-    <div class="exercise-card">
-      <div class="exercise-image">
-        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
-        <img src="./quanly/b1.jpg" alt="Video thumbnail" class="exercise-thumbnail">
-        </a>
-      </div>
-      <div class="exercise-info">
-        <h3 class="exercise-title">Sexy Curve Plan</h3>
-        <p class="exercise-level">Beginner • 14 min</p>
-        <span class="exercise-duration">28 Days</span>
-      </div>
-    </div>
-    <div class="exercise-card">
-      <div class="exercise-image" style=>
-        <img src="./quanly/b1.jpg" alt="">
-      </div>
-      <div class="exercise-info">
-        <h3 class="exercise-title">Total-Body Toning</h3>
-        <p class="exercise-level">Intermediate • 18 min</p>
-        <span class="exercise-duration">30 Days</span>
-      </div>
+
+    <div class="luu">
+      <button class="llu">Lưu Thông Tin</button>
     </div>
   </div>
-</section>
 
-    <!-- Biểu đồ tiến độ -->
-    <section class="sport-schedule-section">
-      <h2 class="section-title">Biểu Đồ Tiến Độ</h2>
-      <p class="progress-text">Xem thống kê tiến độ tập luyện của bạn.</p>
-      <a href="#" class="progress-link">Xem Biểu Đồ Tiến Độ</a>
-    </section>
-
-    <!-- Phản hồi -->
-    <section class="sport-schedule-section">
-      <h2 class="section-title">Phản Hồi</h2>
-      <div class="feedback-content">
-        <textarea class="feedback-textarea" rows="4" placeholder="Ghi lại cảm nhận của bạn..."></textarea>
-        <div class="feedback-checkbox">
-          <input type="checkbox" id="completed" class="feedback-input">
-          <label for="completed" class="feedback-label">Đã hoàn thành</label>
-        </div>
-      </div>
-    </section>
-
-    <!-- Nút lưu -->
-    <div class="save-section">
-      <button class="save-btn">Lưu Thông Tin</button>
-    </div>
+  <div class="bottom-nav">
+    <nav nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+        <li><a href="#"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+        <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+        <li><a href="#"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <script>
-    document.querySelector('.save-btn').addEventListener('click', () => {
-      alert('Thông tin đã được lưu!');
-    });
-    document.querySelector('.add-exercise-btn').addEventListener('click', () => {
-      alert('Đã thêm bài tập!');
-    });
-  </script>
 </body>
 </html>
