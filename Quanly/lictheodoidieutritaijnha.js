@@ -1,10 +1,10 @@
 document.getElementById('btnSave').addEventListener('click', async function(e) {
   e.preventDefault();
 
-  const email = localStorage.getItem('email'); // Lấy tên user từ localStorage (đã lưu từ lúc login)
-  if (!email) {
-    alert('Bạn chưa đăng nhập hoặc phiên làm việc đã hết. Vui lòng đăng nhập lại.');
-    window.location.href = 'dangnhap.html';  // Chuyển về trang đăng nhập
+ const token = localStorage.getItem('token');
+  if (!token) {
+    alert('Bạn cần đăng nhập để xem thông tin.');
+    window.location.href = 'dangnhap.html';
     return;
   }
 
