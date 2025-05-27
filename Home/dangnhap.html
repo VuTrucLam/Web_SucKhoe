@@ -6,33 +6,32 @@
   <title>Đăng nhập</title>
   <link rel="stylesheet" href="dangnhap.css" />
 </head>
-<body>
-  <div class="login-container">
-    <div class="wave-top">
-        <img src="../IMAGES/dangnhaptrenL.png" alt="wave top" />
+  <body>
+    <div class="login-container">
+      <div class="wave-top">
+          <img src="../IMAGES/dangnhaptrenL.png" alt="wave top" />
+      </div>
+      
+      <form id="login-form" class="login-form">
+    <h1>Đăng Nhập</h1>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required />
+
+    <label for="password">Mật khẩu</label>
+    <input type="password" id="password" name="password" placeholder="Mật khẩu" required />
+
+    <div class="login-options">
+      <span>- Đăng Nhập với -</span>
+      <a href="#" class="social"><img src="../IMAGES/googleiconL.png" alt="Google" /></a>
+      <a href="#" class="social"><img src="../IMAGES/fbiconL.png" alt="Facebook" /></a>
+      <a href="#" class="social"><img src="../IMAGES/msiconL.png" alt="Microsoft" /></a>
     </div>
-    
-    <form class="login-form">
-      <h1>Đăng Nhập</h1>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" required />
-
-      <label for="password">Mật khẩu</label>
-      <input type="password" id="password" name="password" placeholder="Mật khẩu" required />
-
-      <div class="login-options">
-        <span>- Đăng Nhập với -</span>
-        <a href="#" class="social"><img src="../IMAGES/googleiconL.png" alt="Google" /></a>
-        <a href="#" class="social"><img src="../IMAGES/fbiconL.png" alt="Facebook" /></a>
-        <a href="#" class="social"><img src="../IMAGES/msiconL.png" alt="Microsoft" /></a>
-      </div>
-
-      <div class="forgot-submit">
-        <a href="quenmatkhau.html">Quên mật khẩu?</a>
-      </div>
-      <a href="home.html" class="verify-btn">Tiếp tục</a>
-    </form>
+    <div class="forgot-submit">
+      <button type="submit">Tiếp tục</button>
+    </div>
+  </form>
 
     <div class="wave-bottom">
         <img src="../IMAGES/dangnhapduoiL.png" alt="wave bottom" />
@@ -41,5 +40,8 @@
       <a href="dangki.html">Đăng kí tài khoản</a>
     </div>
   </div>
+
+  <script src="dangnhap.js"></script>
+
 </body>
 </html>
