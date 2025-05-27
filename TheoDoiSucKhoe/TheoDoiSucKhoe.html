@@ -1,24 +1,117 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Theo Dõi Sức Khỏe</title>
-  <link rel="stylesheet" href="TheoDoiSucKhoe.css">
+  <link rel="stylesheet" href="TheoDoiSucKhoe.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="TheoDoiSucKhoe.js"></script>
 </head>
 <body>
-    <div class="header">
-    <h2>Theo Dõi Sức Khoẻ</h2>
+  <div class="header">
+    <h1>Theo Dõi Sức Khoẻ</h1>
     <div class="notification">🔔</div>
   </div>
+
+  <!-- Theo dõi bước đi -->
   <div class="container">
-    <h1>Theo Dõi Bước Đi</h1>
+    <h2>Theo Dõi Bước Đi</h2>
     <div class="chart-container">
       <canvas id="stepsChart"></canvas>
     </div>
-    <p class="steps-text">Đã đi: <span id="stepsCount">2628</span> bước</p>
+    <p class="steps-text">Đã đi: <span id="stepsCount">0</span> bước</p>
   </div>
-  <script src="TheoDoiSucKhoe.js"></script>
+
+  <!-- Nhịp tim -->
+  <div class="container">
+    <div class="heart-rate-header">
+      <div class="heart-rate-info">
+        <h2>Nhịp Tim</h2>
+        <p class="bpm"><span id="heartRateValue">--</span></p>
+      </div>
+      <div class="heart-icon">❤️</div>
+    </div>
+    <canvas id="heartChart" width="280" height="150"></canvas>
+  </div>
+
+  <!-- Theo dõi lượng nước -->
+  <div class="container water-tracker">
+    <h2>Theo Dõi Lượng Nước</h2>
+    <div class="water-section">
+      <div class="chart">
+        <div class="bars" id="bars"></div>
+        <p id="total">0 lít</p>
+      </div>
+      <div style="display: flex; align-items: flex-end;">
+        <div class="hours" id="hours"></div>
+        <div class="glass">
+          <div class="water" id="water" style="height: 0%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Theo dõi Huyết Áp & Đường Huyết -->
+  <div class="card-group">
+    <h2>Huyết Áp & Đường Huyết</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>💧 Huyết áp</h3>
+        <div><strong id="bp-value">102 / 72</strong> mmHg</div>
+        <div id="bp-status" class="status normal">Bình thường</div>
+        <canvas id="bp-chart"></canvas>
+      </div>
+      <div class="card">
+        <h3>🩸 Đường huyết</h3>
+        <div><strong id="sugar-value">80</strong> mg/dL</div>
+        <div id="sugar-status" class="status normal">Bình thường</div>
+        <canvas id="sugar-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <h3>Nhập dữ liệu mới</h3>
+      <label>Huyết áp (tâm thu / tâm trương): <input type="text" id="bp-input" placeholder="VD: 120/80"></label><br><br>
+      <label>Đường huyết: <input type="number" id="sugar-input" placeholder="VD: 90"></label><br><br>
+      <button onclick="updateData()">Cập nhật</button>
+    </div>
+  </div>
+
+  <!-- Tính chỉ số BMI -->
+  <div class="container bmi-tracker">
+    <h2>Tính Chỉ Số BMI</h2>
+    <div class="input-container">
+      <label>Chiều cao (cm): </label>
+      <input type="number" id="height" placeholder="Nhập chiều cao">
+      <br>
+      <label>Cân nặng (kg): </label>
+      <input type="number" id="weight" placeholder="Nhập cân nặng">
+      <br>
+      <button onclick="calculateBMI()">Tính BMI</button>
+    </div>
+    <div id="bmiResult"></div>
+    <div id="status"></div>
+    <canvas id="bmiChart" ></canvas>
+  </div>
+
+  <!-- Theo dõi Giấc Ngủ -->
+<div class="container sleep-tracker">
+  <h2>Giấc Ngủ</h2>
+  <div class="input-container">
+    <label>Thời gian ngủ (giờ): </label>
+    <input type="number" id="sleepTime" placeholder="Nhập thời gian ngủ">
+    <br>
+    <label>Số lần thức giấc: </label>
+    <input type="number" id="wakeCount" placeholder="Nhập số lần thức">
+    <br>
+    <button onclick="calculateSleepQuality()">Tính Chất Lượng</button>
+  </div>
+  <div class="chart-container">
+    <canvas id="sleepChart"></canvas>
+  </div>
+  <div id="sleepQuality"></div>
+</div>
+
 </body>
 </html>
