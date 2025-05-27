@@ -24,3 +24,4 @@ exports.addTheoDoiDieuTri = (req, res) => {
     res.json({ message: 'Thêm lịch theo dõi điều trị thành công!' });
   });
 };
+
