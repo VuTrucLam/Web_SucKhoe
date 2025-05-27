@@ -1,8 +1,8 @@
 document.getElementById('btnSave').addEventListener('click', async function(e) {
   e.preventDefault();
 
-  const name = localStorage.getItem('username'); // Lấy tên user từ localStorage (đã lưu từ lúc login)
-  if (!name) {
+  const email = localStorage.getItem('email'); // Lấy tên user từ localStorage (đã lưu từ lúc login)
+  if (!email) {
     alert('Bạn chưa đăng nhập hoặc phiên làm việc đã hết. Vui lòng đăng nhập lại.');
     window.location.href = 'dangnhap.html';  // Chuyển về trang đăng nhập
     return;
