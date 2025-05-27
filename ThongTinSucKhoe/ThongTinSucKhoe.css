@@ -21,13 +21,20 @@ header {
 
 header h1 {
   font-size: 18px;
+  margin: 0;
 }
 
-header .fa-bell {
+.header-notification {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notification {
+  font-size: 20px;
+  cursor: pointer;
   position: absolute;
   right: 1rem;
   top: 1.2rem;
-  font-size: 18px;
 }
 
 .avatar-wrapper {
