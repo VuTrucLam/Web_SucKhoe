@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.notification {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.chart-container {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.steps-text {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333333;
+}
+
+#stepsCount {
+  font-weight: bold;
+  color: #e91eb6;
+}
+
+.heart-rate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.heart-rate-info .bpm {
+  font-size: 24px;
+  color: #f44336;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+}
+
+.heart-icon {
+  font-size: 36px;
+  color: #f44336;
+}
+
+canvas#heartChart {
+  width: 100%;
+  height: 120px;
+}
+
+/* Water tracking */
+.water-section {
+  display: flex;
+  gap: 20px;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bars {
+  display: flex;
+  align-items: end;
+  height: 150px;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.bar {
+  width: 12px;
+  height: 100%;
+  background: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bar.active {
+  background: #00b4d8;
+}
+
+.glass {
+  position: relative;
+  width: 60px;
+  height: 160px;
+  border: 2px solid #00b4d8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.water {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #90e0ef;
+  transition: height 0.3s;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  margin-right: 6px;
+}
+
+.hour {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
