@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const authRoutes = require('./routes/auth');
+const healthRoutes = require('./routes/health');
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.static('public'));
 
 app.use("/api/user", userRoutes);
 app.use('/uploads', express.static('uploads'));
+app.use('/api/health-profiles', healthRoutes);
 
 
 const PORT = process.env.PORT || 3000;
