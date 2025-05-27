@@ -16,9 +16,12 @@
 </header>
 
   <div class="avatar-wrapper">
-    <img src="/IMAGES/AvatarO.png" alt="Avatar" class="avatar" />
+    <img src="/IMAGES/AvatarO.png" alt="Avatar" class="avatar" id="avatar-preview" />
     <div class="camera-icon">
-      <i class="fa-solid fa-camera"></i>
+      <label for="avatar">
+        <i class="fa-solid fa-camera"></i>
+      </label>
+      <input type="file" id="avatar" accept="image/*" style="display: none;" onchange="previewAvatar(event)" disabled />
       <div class="edit-icon" onclick="enableEdit()"><i class="fas fa-pen"></i></div>
     </div>
   </div>
@@ -54,7 +57,7 @@
 
   </div>
 
-  <!-- <script src="ThongTinSucKhoe.js"></script> -->
+  <script src="ThongTinSucKhoe.js"></script>
 
     <nav class="bottom-nav">
       <ul>
@@ -65,5 +68,6 @@
       </ul>
     </nav>
 <script src="load.js"></script>
+<script src="capnhat.js"></script>
 </body>
 </html>

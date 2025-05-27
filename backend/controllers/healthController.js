@@ -85,3 +85,26 @@ exports.getHealthProfile = async (req, res) => {
   }
 };
 
+exports.updateHealthProfile = async (req, res) => {
+  const userId = req.user.id;
+  const { height, weight, blood_type, allergies, underlying_conditions, mental_health_status } = req.body;
+
+  try {
+    const [existing] = await db.promise().query('SELECT * FROM user_health_profiles WHERE user_id = ?', [userId]);
+    if (existing.length === 0) {
+      return res.status(404).json({ message: 'Không tìm thấy hồ sơ sức khỏe.' });
+    }
+
+    await db.promise().query(
+      `UPDATE user_health_profiles 
+       SET height = ?, weight = ?, blood_type = ?, allergies = ?, underlying_conditions = ?, mental_health_status = ?
+       WHERE user_id = ?`,
+      [height, weight, blood_type, allergies, underlying_conditions, mental_health_status, userId]
+    );
+
+    res.json({ message: 'Cập nhật hồ sơ sức khỏe thành công.' });
+  } catch (err) {
+    console.error('Lỗi cập nhật hồ sơ:', err);
+    res.status(500).json({ message: 'Lỗi server khi cập nhật hồ sơ.' });
+  }
+};
