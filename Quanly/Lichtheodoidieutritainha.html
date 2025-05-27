@@ -23,14 +23,14 @@
             
         </ul>
     </nav>
-  <nav nav class="bottom-nav">
+  <!-- <nav nav class="bottom-nav">
       <ul>
         <li><a href="home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
         <li><a href="#"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
         <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
         <li><a href="#"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
       </ul>
-    </nav>
+    </nav> -->
     
   </header>
     <main>
@@ -42,11 +42,11 @@
                 <div class="time_3">
                     <div>
                         <label class="time_5">Từ ngày</label>
-                        <input type="date" class="time_6">
+                        <input type="date" id="ngay_bat_dau" class="time_6">
                     </div>
                     <div>
                         <label class="time_7">Đến ngày</label>
-                        <input type="date" class="time_8">
+                        <input type="date" id="ngay_ket_thuc" class="time_8">
                     </div>
                 </div>
             </section>
@@ -54,27 +54,24 @@
               <h2 class="section-title">Trạng thái sức khoẻ
 
               </h2>
-              <textarea class="ttsk3" rows="4" placeholder="Nhập trạng thái sức khỏe..."></textarea>
+              <textarea id="trang_thai" class="ttsk3" rows="4" placeholder="Nhập trạng thái sức khỏe..."></textarea>
             </section>
             <section class="service-box lichtheodoi">
                 <h2 class="section-title">Theo Dõi Chỉ Số</h2>
                 <div class="th_3">
                     <div>
                         <label class="th_4">Nhiệt độ (°C)</label>
-                        <input type="number" class="th_5" placeholder="Nhập nhiệt độ">
+                        <input type="number" id="nhiet_do" class="th_5" placeholder="Nhập nhiệt độ">
                     </div>
                     <div>
                         <label class="th_6">Huyết áp (mmHg)</label>
-                        <input type="text" class="th_7" placeholder="Nhập huyết áp">
+                        <input type="text" id="huyet_ap" class="th_7" placeholder="Nhập huyết áp">
                     </div>
                     <div>
                         <label class="th_8">Nhịp tim (bpm)</label>
-                        <input type="number" class="th_9" placeholder="Nhập nhịp tim">
+                        <input type="number" id="nhip_tim" class="th_9" placeholder="Nhập nhịp tim">
                     </div>
-                    <div>
-                        <label class="th_10">Khác</label>
-                        <input type="text" class="th_11" placeholder="Nhập thông tin khác">
-                    </div>
+                    
                 </div>
             </section>
             <!-- Nhóm Chế Độ Dinh Dưỡng và Uống Thuốc -->
@@ -108,9 +105,9 @@
               </section>
 
             <div class="luu">
-                <button class="llu">Lưu Thông Tin</button>
+                <button id="btnSave" class="llu">Lưu Thông Tin</button>
             </div>
-           <script src="js1.js"></script>
+           <script src="lictheodoidieutritaijnha.js"></script>
 
     </main>
 
