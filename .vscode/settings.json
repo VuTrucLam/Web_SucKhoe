@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
+    "livePreview.defaultPreviewPath": "/Quanly/lichuongthuoc.html"
+=======
     "liveServer.settings.port": 5501
+>>>>>>> 0dc9bc281aea115d977832a35f0d38dda1f43de9
 }

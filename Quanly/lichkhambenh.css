@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pridi', 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header{
+  display:flex;
+  justify-self: space-between;
+  align-items: center;
+  height: 80px;
+  width:450px;
+  background-color: #96BFF5;
+  padding:0 20px;
+  color:#fff;
+  position:relative;
+  z-index:1000;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  color: #000; /* Matches the image's hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  /* Mobile view adjustments */
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .dropdown-menu {
+    display: flex;
+  }
+
+  .dropdown-menu ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .dropdown-menu li {
+    padding: 0;
+  }
+
+  .dropdown-menu a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablet and desktop adjustments */
+  .header {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .dropdown-menu ul {
+    gap: 20px;
+  }
+
+  .dropdown-menu a {
+    font-size: 16px;
+  }
+
+  .appointment-section {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .header {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .dropdown-menu ul {
+    flex-direction: row;
+    margin: 0 20px;
+  }
+
+  .dropdown-menu li {
+    padding: 0 20px;
+    line-height: 80px;
+    font-size: 16px;
+  }
+
+  .dropdown-menu li:hover {
+    border-bottom: 2px solid #007bff;
+    background-color: transparent;
+  }
+
+  .dropdown-menu a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .header:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* The rest of the CSS remains unchanged */
+.appointment-section {
+  padding: 20px;
+}
+
+.appointment-section .section-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.appointment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+}
+
+.appointment-card h2 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.appointment-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.appointment-card p strong {
+  color: #2c3e50;
+}
+
+.appointment-card input[type="date"],
+.appointment-card input[type="time"],
+.appointment-card input[type="text"],
+.appointment-card select,
+.appointment-card textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.appointment-card textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.reminders {
+  list-style: disc;
+  padding-left: 20px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.past-appointments {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.past-appointments p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.action-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+}
+
+.action-link:hover {
+  background-color: #2980b9;
+}
+
+.save-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.save-btn {
+  padding: 12px 30px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.save-btn:hover {
+  background-color: #27ae60;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E4E9FA;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.bottom-nav li {
+  text-align: center;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-nav img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.bottom-nav a:hover {
+  color: #007bff;
+}
