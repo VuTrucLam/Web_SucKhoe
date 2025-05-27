@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8fb;
+}
+
+/* Header */
+.news-header {
+  text-align: center;
+  padding: 20px 0; /* Thêm padding-bottom */
+}
+
+.logo1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; /* Giảm font-size trên mobile */
+  line-height: 1; /* Căn chỉnh dòng */
+  margin: 0;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #999;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px; /* Giảm font-size trên mobile */
+  padding: 10px 0;
+  text-transform: uppercase; /* Làm chữ in hoa cho menu */
+  letter-spacing: 1px; /* Tăng khoảng cách chữ */
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* News Showcase (Mobile mặc định) */
+.news-showcase {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: auto;
+  min-height: 200px;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-item .text {
+  color: white;
+  font-size: 18px; /* Giảm font-size trên mobile */
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+  
+}
+
+.news-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-align: left;
+    font-family:'Playfair Display';
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.latest-news {
+  padding: 20px;
+  /* max-width: 1200px; */
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.latest-news h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Mobile (mặc định): dọc */
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-news,
+.news-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+}
+
+.main-news img,
+.news-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.news-content h3 {
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.news-content p {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #555;
+  margin: 0;
+}
+
+.news-card h4 {
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  margin: 10px;
+}
+
+/* Desktop (≥768px) */
+@media (min-width: 768px) {
+  .logo1 {
+    font-size: 40px;
+  }
+
+  .menu {
+    font-size: 18px; /* Giảm thêm một chút cho desktop */
+  }
+
+  .news-showcase {
+    flex-direction: row;
+    height: 100vh;
+    /* min-height: 400px; Đảm bảo không bị co lại quá mức */
+  }
+
+  .news-item {
+    flex: 1;
+    transition: flex 0.5s ease; /* Chỉ transition flex trên desktop */
+  }
+
+  .news-item:hover {
+    flex: 2;
+  }
+
+  .news-showcase:hover .news-item:not(:hover) {
+    flex: 1;
+  }
+
+  .news-item .text {
+    font-size: 20px; /* Giữ font-size lớn hơn trên desktop */
+  }
+
+  .content {
+    opacity: 0; /* Ẩn nội dung trên desktop khi không hover */
+    transition: opacity 0.5s ease-in-out; /* Thêm hiệu ứng fade */
+    font-size: 24px;
+  }
+
+  .news-item:hover .content {
+      opacity: 1; /* Hiển thị khi hover trên desktop */
+  }
+
+  .latest-news{
+    width: 90%;
+  }
+
+  .news-wrapper {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .main-news {
+    flex: 2;
+  }
+
+  .side-news {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .news-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .news-card img {
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .news-content h3 {
+    font-size: 30px;
+  }
+
+  .news-content p {
+    font-size: 24px;
+  }
+
+  .news-card h4 {
+    font-size: 24px;
+  }
+}
