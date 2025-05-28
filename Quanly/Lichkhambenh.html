@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Khám Bệnh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lichkhambenh.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+    <img src="../IMAGES/logoL.png" alt="Logo" class="logo">
+    <div class="dropdown-menu">
+      <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="Lichtheodoidieutritainha.html">Tập luyện</a></li>
+            <li><a href="lichkhambenh.css"> Thể thao</a></li>
+            <li><a href="lichdinhduong.html">Dinh dưỡng</a></li>
+            <li><a href="lichuongthuoc.html">Uống thuốc</a></li>
+            
+        </ul>
+    </div>
+  </div>
+
+    <section class="appointment-section">
+      <h1 class="section-title">Lịch Khám Bệnh</h1>
+
+      <div class="appointment-card">
+        <h2>Thông Tin Lịch Khám</h2>
+
+        <p><strong>Ngày:</strong> <input type="date" id="date" value="2025-05-26"></p>
+        <p><strong>Thời gian:</strong> <input type="time" id="time" value="23:10"></p>
+        <p><strong>Trạng thái:</strong> 
+          <select id="status">
+            <option value="Đã xác nhận">Đã xác nhận</option>
+            <option value="Chưa xác nhận">Chưa xác nhận</option>
+            <option value="Đã hủy">Đã hủy</option>
+          </select>
+        </p>
+        <p><strong>Lý do khám:</strong> 
+          <input type="text" id="reason" placeholder="Ví dụ: Đau họng, kiểm tra tổng quát">
+        </p>
+        <p><strong>Bác sĩ:</strong> 
+          <select id="doctor">
+            <option value="Dr. Nguyen Van A">Dr. Nguyen Van A</option>
+            <option value="Dr. Tran Thi B">Dr. Tran Thi B</option>
+          </select>
+        </p>
+        <p><strong>Bệnh viện:</strong> 
+          <input type="text" id="hospital" value="Bệnh viện Đa khoa Quốc tế Vinmec">
+        </p>
+        <p><strong>Liên hệ bệnh viện:</strong> 
+          <input type="text" id="hospital_contact" value="Số điện thoại: 024 3975 1234 | Địa chỉ: 458 Minh Khai, Hai Bà Trưng, Hà Nội">
+        </p>
+        <p><strong>Khoa:</strong> 
+          <select id="department">
+            <option value="Nội khoa">Nội khoa</option>
+            <option value="Ngoại khoa">Ngoại khoa</option>
+            <option value="Tai mũi họng">Tai mũi họng</option>
+          </select>
+        </p>
+        <p><strong>Khám định kỳ:</strong> 
+          <input type="checkbox" id="periodic-checkup">
+          <label for="periodic-checkup">Có</label>
+        </p>
+        <p><strong>Ghi chú:</strong> 
+          <textarea id="note" placeholder="Ghi chú của bạn (ví dụ: Đưa theo kết quả xét nghiệm)"></textarea>
+        </p>
+        </div>
+
+        <h2>Nhắc nhở trước khi khám</h2>
+        <ul class="reminders">
+          <li>Mang theo giấy tờ tùy thân (CMND/CCCD).</li>
+          <li>Không ăn trước nếu có xét nghiệm máu.</li>
+          <li>Đến trước giờ hẹn 15 phút.</li>
+        </ul>
+
+        <h2>Lịch sử khám gần đây</h2>
+        <div class="past-appointments">
+          <p>15/05/2025 - Dr. Nguyen Van A - Kiểm tra tổng quát</p>
+          <p>01/05/2025 - Dr. Tran Thi B - Đau họng</p>
+        </div>
+
+        <div class="save-section">
+           <button id="btnSave" class="save-btn">Lưu Thông Tin</button>
+        </div>
+      </div>
+    </section>
+    <nav class="bottom-nav">
+      
+    </nav>
+   <script src="lichkhambenh.js"></script>
+
+  </div>
+</body>
+</html>

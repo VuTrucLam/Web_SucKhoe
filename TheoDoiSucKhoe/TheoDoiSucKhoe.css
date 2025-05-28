@@ -24,6 +24,7 @@ body {
 .header h1 {
   font-size: 24px;
   margin: 0;
+  padding-left: 50px;
 }
 
 .notification {
@@ -47,6 +48,7 @@ h1, h2 {
   font-size: 20px;
   margin-bottom: 15px;
   color: #1a1817;
+  color: #333;
   text-align: center;
 }
 
@@ -323,4 +325,6 @@ canvas#bmiChart {
   font-size: 18px;
   margin-top: 10px;
 }
+
+
 

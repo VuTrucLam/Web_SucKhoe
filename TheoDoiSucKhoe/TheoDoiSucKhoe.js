@@ -370,3 +370,5 @@ function calculateSleepQuality() {
     qualityElement.style.color = 'red';
   }
 }
+
+

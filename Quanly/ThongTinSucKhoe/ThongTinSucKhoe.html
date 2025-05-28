@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thông Tin Sức Khoẻ</title>
+  <link rel="stylesheet" href="ThongTinSucKhoe.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <h1>Thông Tin Sức Khoẻ</h1>
+    <div class="notification">🔔</div>
+  </div>
+</header>
+
+  <div class="avatar-wrapper">
+    <img src="/IMAGES/AvatarO.png" alt="Avatar" class="avatar" />
+    <div class="camera-icon">
+      <i class="fa-solid fa-camera"></i>
+      <div class="edit-icon" onclick="enableEdit()"><i class="fas fa-pen"></i></div>
+    </div>
+  </div>
+
+  <div class="menu">
+    <label for="age">Tuổi</label>
+    <input type="text" id="age" value="25" disabled />
+
+    <label for="gender">Giới Tính</label>
+    <input type="text" id="gender" value="Nữ" disabled />
+
+    <label for="height">Chiều Cao (cm)</label>
+    <input type="text" id="height" value="160" disabled />
+
+    <label for="weight">Cân Nặng (kg)</label>
+    <input type="text" id="weight" value="55" disabled />
+
+    <label for="blood">Nhóm Máu</label>
+    <input type="text" id="blood" value="O" disabled />
+
+    <label for="disease">Bệnh Nền</label>
+    <input type="text" id="disease" value="Tiền Đình" disabled />
+
+    <label for="allergy">Dị Ứng</label>
+    <input type="text" id="allergy" value="Sữa" disabled />
+
+    <label for="mental">Tình Trạng Tâm Lý</label>
+    <input type="text" id="mental" value="Stressed" disabled />
+
+    <label for="bmi">BMI</label>
+    <input type="text" id="bmi" value="19.5" disabled />
+    <button id="saveBtn" style="display: none;">Lưu thông tin</button>
+
+  </div>
+
+  <script src="ThongTinSucKhoe.js"></script>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="/Home/home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+        <li><a href="/ChatOptions/ChatOptions.html"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+        <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+        <li><a href="/HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+      </ul>
+    </nav>
+
+</body>
+</html>

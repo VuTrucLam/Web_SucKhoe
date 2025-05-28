@@ -16,9 +16,12 @@
 </header>
 
   <div class="avatar-wrapper">
-    <img src="/IMAGES/AvatarO.png" alt="Avatar" class="avatar" />
+    <img src="/IMAGES/AvatarO.png" alt="Avatar" class="avatar" id="avatar-preview" />
     <div class="camera-icon">
-      <i class="fa-solid fa-camera"></i>
+      <label for="avatar">
+        <i class="fa-solid fa-camera"></i>
+      </label>
+      <input type="file" id="avatar" accept="image/*" style="display: none;" onchange="previewAvatar(event)" disabled />
       <div class="edit-icon" onclick="enableEdit()"><i class="fas fa-pen"></i></div>
     </div>
   </div>
@@ -36,16 +39,16 @@
     <label for="weight">Cân Nặng (kg)</label>
     <input type="text" id="weight" value="55" disabled />
 
-    <label for="blood">Nhóm Máu</label>
+    <label for="blood_type">Nhóm Máu</label>
     <input type="text" id="blood" value="O" disabled />
 
     <label for="disease">Bệnh Nền</label>
     <input type="text" id="disease" value="Tiền Đình" disabled />
 
-    <label for="allergy">Dị Ứng</label>
+    <label for="allergies">Dị Ứng</label>
     <input type="text" id="allergy" value="Sữa" disabled />
 
-    <label for="mental">Tình Trạng Tâm Lý</label>
+    <label for="mental_health_status">Tình Trạng Tâm Lý</label>
     <input type="text" id="mental" value="Stressed" disabled />
 
     <label for="bmi">BMI</label>
@@ -64,6 +67,7 @@
         <li><a href="/HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
       </ul>
     </nav>
-
+<script src="load.js"></script>
+<script src="capnhat.js"></script>
 </body>
 </html>
