@@ -1,98 +1,51 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lịch Uống Thuốc</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Pridi:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css_lichuonthuoc.css">
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <header class="header">
-      <img src="../IMAGES/logoL.png" alt="Logo" class="logo">
+      <img src="../IMAGES/logoL.png" alt="Logo" class="logo" />
       <nav class="dropdown-menu">
         <ul>
-            <li><a href="home.html">Trang chủ</a></li>
-            <li><a href="Lichluyentapthethao.html">Thể thao</a></li>
-            <li><a href="Lichkhambenh.html">Khám bệnh</a></li>
-            <li><a href="lichdinhduong.html">Dinh dưỡng</a></li>
-            <li><a href="Lichtheodoidieutritainha.html">Theo dõi điều trị tại nhà</a></li>
-            
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Thể thao</a></li>
+          <li><a href="#">Khám bệnh</a></li>
+          <li><a href="#">Dinh dưỡng</a></li>
+          <li><a href="#">Theo dõi điều trị</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Lịch uống thuốc -->
     <section class="medication-schedule">
       <h1 class="section-title">Lịch Uống Thuốc</h1>
-      <div class="calendar-header">
-        <h2>24 Th5/2025 <span>Today</span></h2>
-        <div class="calendar-days">
-          <span>S</span>
-          <span>M</span>
-          <span>T</span>
-          <span>W</span>
-          <span>T</span>
-          <span>F</span>
-          <span>S</span>
-        </div>
-        <div class="calendar-dates">
-          <span>21</span>
-          <span>22</span>
-          <span>23</span>
-          <span class="today">24</span>
-          <span>25</span>
-          <span>26</span>
-          <span>27</span>
-        </div>
-      </div>
 
-      <div class="medication-cards">
-        <div class="medication-card">
-          <div class="medication-info">
-            <h3>Medicine - Sore Throat</h3>
-            <p><strong>Amoxicillin 500mg</strong></p>
-            <p>Dose at: 6:00 AM</p>
-            <p>3 Times Daily | After Food</p>
-            <p>Day 2 of 5</p>
-            <div class="status-indicators">
-              <span class="status-taken"></span>
-              <span class="status-taken"></span>
-              <span class="status-pending"></span>
-            </div>
-            <button class="taken-btn">Taken</button>
-            <p>11 Tablets Left - <a href="#" class="order-link">Order Now</a></p>
-          </div>
-          <div class="medication-image">
-            <img src="amoxicillin-box.png" alt="Amoxicillin 500mg Box">
-          </div>
-        </div>
+      <!-- Tìm thuốc -->
+      <section class="medication-search">
+        <h2>Tìm thuốc</h2>
+        <input type="text" id="searchInput" placeholder="Nhập tên thuốc..." />
+        <div id="searchResults" class="medication-results"></div>
+      </section>
 
-        <div class="medication-card">
-          <div class="medication-info">
-            <h3>Medicine - Sore Throat</h3>
-            <p><strong>Amoxicillin 500mg and vitamin C</strong></p>
-            <p>Dose at: 8:00 PM</p>
-            <p>3 Times Daily | After Food</p>
-            <p>Day 2 of 5</p>
-            <div class="status-indicators">
-              <span class="status-taken"></span>
-              <span class="status-taken"></span>
-              <span class="status-pending"></span>
-            </div>
-            <button class="taken-btn">Taken</button>
-            <p>11 Tablets Left - <a href="#" class="order-link">Order Now</a></p>
-          </div>
-          <div class="medication-image">
-            <img src="amoxicillin-capsule.png" alt="Amoxicillin 500mg Capsule">
-          </div>
-        </div>
-      </div>
+      <!-- Form nhập thuốc -->
+      <!-- <form class="add-medicine-form">
+        <h3>Nhập thuốc mới</h3>
+        <input type="text" placeholder="Tên thuốc" required>
+        <input type="text" placeholder="Liều dùng (ví dụ: 500mg)" required>
+        <input type="text" placeholder="Thời gian uống (ví dụ: 8:00 AM)" required>
+        <button type="submit">Thêm thuốc</button>
+      </form> -->
     </section>
-
-    <nav class="bottom-nav">
-      
-    </nav>
   </div>
+
+  <!-- JavaScript xử lý tìm thuốc -->
+  <script src="lichuongthuoc.js"></script>
 </body>
 </html>

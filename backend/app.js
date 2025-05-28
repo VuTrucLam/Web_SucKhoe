@@ -11,6 +11,7 @@ app.use(express.json());
 const userRoutes = require("./routes/user");
 const theoDoiDieuTriRoutes = require('./routes/theodoidieutri');
 const lichKhamRoutes = require('./routes/lichkham');
+const thuocRoutes = require('./routes/thuoc');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/theo_doi_dieu_tri', theoDoiDieuTriRoutes);
@@ -20,6 +21,7 @@ app.use("/api/user", userRoutes);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/health-profiles', healthRoutes);
 app.use('/api/lichkham', lichKhamRoutes);
+app.use('/api/thuoc', thuocRoutes);
 
 
 const PORT = process.env.PORT || 3000;
