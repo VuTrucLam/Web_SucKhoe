@@ -10,23 +10,29 @@
 </head>
 <body>
     <div class="container">
-    <div class="header" id="header">
-        <img src="../IMAGES/logoL.png" class="logo" alt="Logo">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <ul>
-                <li><a href="../Home/home.css">Trang chủ</a></li>
-                <li><a href="Lichtheodoidieutritainha.html">Lịch điều trị theo dõi tại nhà</a></li>
-                <li><a href="Lichkhambenh.html">Lịch khám bệnh</a></li>
-                <li><a href="Lichluyentapthethao.html">Lịch luyện tập thể thao</a></li>
-                <li><a href="lichdinhduong.html">Lịch uống thuốc</a></li>
-            </ul>
-        </div>
-    </div>
+    <header class="header">
+    <img src="../IMAGES/logoL.png" alt="Logo" class="logo">
+
+
+    <!-- Menu Dropdown -->
+    <nav class="dropdown-menu">
+        <ul>
+            <li><a href="home.html">Trang chủ</a></li>
+            <li><a href="lichdinhduong.html">Lich dinh dưỡng</a></li>
+            <li><a href="Lichluyentapthethao.html">Lịch dinh dưỡng</a></li>
+            <li><a href="Lichkhambenh.html">Lịch khám bệnh</a></li>
+        </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+        <li><a href="../ChatOptions/ChatOptions.html"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+        <li><a href="../Quanly/Lichtheodoidieutritainha.html"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+        <li><a href="../HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+      </ul>
+    </nav>
+  </header>
 </div>
 
         <div class="intro">
@@ -202,34 +208,12 @@
             </div>
         </div>
 
-        <div class="luu">
-            <button class="llu">Lưu Thông Tin</button>
-        </div>
+      
 
-        <div class="bottom-nav">
-            <ul>
-                <li><a href="#"><img src="../IMAGES/home.png" alt="Home">Trang chủ</a></li>
-                <li><a href="#"><img src="../IMAGES/schedule.png" alt="Schedule">Lịch điều trị</a></li>
-                <li><a href="#"><img src="../IMAGES/services.png" alt="Services">Lịch khám</a></li>
-                <li><a href="#"><img src="../IMAGES/team.png" alt="Team">Lịch thể thao</a></li>
-                <li><a href="#"><img src="../IMAGES/news.png" alt="News">Lịch uống thuốc</a></li>
-            </ul>
-        </div>
+       
     </div>
 
-    <script>
-        function toggleDetails(dayId) {
-            const content = document.getElementById(dayId);
-            const button = content.previousElementSibling;
-            if (content.classList.contains('show')) {
-                content.classList.remove('show');
-                button.textContent = 'Xem Chi Tiết';
-            } else {
-                content.classList.add('show');
-                button.textContent = 'Ẩn Chi Tiết';
-            }
-        }
-    </script>
+    
     <script src="dinhduong.js"></script>
 </body>
 </html>

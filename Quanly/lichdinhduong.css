@@ -14,6 +14,8 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
+    /* padding-bottom: 100px; */
+
 }
 
 .header {
@@ -240,6 +242,12 @@ body {
         padding-left: 0; /* Loại bỏ padding bên trái */
         align-items: center; /* Căn giữa hình ảnh và nội dung */
     }
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+
+    }
 
     .lichtheodoi3 img {
         margin-right: 0; /* Loại bỏ margin bên phải */
@@ -304,4 +312,10 @@ body {
         flex-direction: row;
         align-items: flex-start; /* Đảm bảo các hộp không căn chỉnh chiều cao bằng nhau */
     }
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+
+}
 }
