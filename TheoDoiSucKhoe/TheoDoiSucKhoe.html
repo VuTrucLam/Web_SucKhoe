@@ -10,13 +10,14 @@
 </head>
 <body>
   <div class="header">
-    <h2>Theo Dõi Sức Khoẻ</h2>
+    <div class="placeholder"></div>
+    <h1>Theo Dõi Sức Khoẻ</h1>
     <div class="notification">🔔</div>
   </div>
-
+   <div class="main-content">
   <!-- Theo dõi bước đi -->
   <div class="container">
-    <h1>Theo Dõi Bước Đi</h1>
+    <h2>Theo Dõi Bước Đi</h2>
     <div class="chart-container">
       <canvas id="stepsChart"></canvas>
     </div>
@@ -51,7 +52,76 @@
       </div>
     </div>
   </div>
-  
 
+  <!-- Theo dõi Huyết Áp & Đường Huyết -->
+  <div class="card-group">
+    <h2>Huyết Áp & Đường Huyết</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>💧 Huyết áp</h3>
+        <div><strong id="bp-value">102 / 72</strong> mmHg</div>
+        <div id="bp-status" class="status normal">Bình thường</div>
+        <canvas id="bp-chart"></canvas>
+      </div>
+      <div class="card">
+        <h3>🩸 Đường huyết</h3>
+        <div><strong id="sugar-value">80</strong> mg/dL</div>
+        <div id="sugar-status" class="status normal">Bình thường</div>
+        <canvas id="sugar-chart"></canvas>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <h3>Nhập dữ liệu mới</h3>
+      <label>Huyết áp (tâm thu / tâm trương): <input type="text" id="bp-input" placeholder="VD: 120/80"></label><br><br>
+      <label>Đường huyết: <input type="number" id="sugar-input" placeholder="VD: 90"></label><br><br>
+      <button onclick="updateData()">Cập nhật</button>
+    </div>
+  </div>
+
+  <!-- Tính chỉ số BMI -->
+  <div class="container bmi-tracker">
+    <h2>Tính Chỉ Số BMI</h2>
+    <div class="input-container">
+      <label>Chiều cao (cm): </label>
+      <input type="number" id="height" placeholder="Nhập chiều cao">
+      <br>
+      <label>Cân nặng (kg): </label>
+      <input type="number" id="weight" placeholder="Nhập cân nặng">
+      <br>
+      <button onclick="calculateBMI()">Tính BMI</button>
+    </div>
+    <div id="bmiResult"></div>
+    <div id="status"></div>
+    <canvas id="bmiChart" ></canvas>
+  </div>
+
+  <!-- Theo dõi Giấc Ngủ -->
+<div class="container sleep-tracker">
+  <h2>Giấc Ngủ</h2>
+  <div class="input-container">
+    <label>Thời gian ngủ (giờ): </label>
+    <input type="number" id="sleepTime" placeholder="Nhập thời gian ngủ">
+    <br>
+    <label>Số lần thức giấc: </label>
+    <input type="number" id="wakeCount" placeholder="Nhập số lần thức">
+    <br>
+    <button onclick="calculateSleepQuality()">Tính Chất Lượng</button>
+  </div>
+  <div class="chart-container">
+    <canvas id="sleepChart"></canvas>
+  </div>
+  <div id="sleepQuality"></div>
+</div>
+</div> 
+
+<nav class="bottom-nav">
+      <ul>
+        <li><a href="/Home/home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+        <li><a href="/ChatOptions/ChatOptions.html"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+        <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+        <li><a href="/HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+      </ul>
+    </nav>
 </body>
 </html>
