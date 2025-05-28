@@ -3,6 +3,8 @@ const cors = require('cors');
 require('dotenv').config();
 const authRoutes = require('./routes/auth');
 const healthRoutes = require('./routes/health');
+const doctorRoutes = require('./routes/doctor');
+const messageRoutes = require('./routes/message');
 
 
 const app = express();
@@ -20,6 +22,9 @@ app.use("/api/user", userRoutes);
 app.use('/uploads', express.static('uploads'));
 app.use('/api/health-profiles', healthRoutes);
 app.use('/api/lichkham', lichKhamRoutes);
+
+app.use('/api/doctors', doctorRoutes);
+app.use('/api/messages', messageRoutes);
 
 
 const PORT = process.env.PORT || 3000;
