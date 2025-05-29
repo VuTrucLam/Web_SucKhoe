@@ -14,6 +14,8 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
+    /* padding-bottom: 100px; */
+
 }
 
 .header {
@@ -66,13 +68,22 @@ body {
     color: #04182b;
 }
 
-.service-box1, .service-box2, .service-box3, .service-box4 {
+.service-box1, .service-box2, .service-box3 {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #3498db;
+}
+.service-box4{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    width: 200px;
 }
 
 .section-title {
@@ -94,16 +105,12 @@ body {
     align-items: flex-start;
 }
 
-.lichtheodoi3 img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-right: 15px;
-}
-
 .lichtheodoi3 li {
     margin-bottom: 5px;
+     font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+
 }
 
 .action-link {
@@ -240,6 +247,12 @@ body {
         padding-left: 0; /* Loại bỏ padding bên trái */
         align-items: center; /* Căn giữa hình ảnh và nội dung */
     }
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    /* padding-bottom: 100px; */
+
+    }
 
     .lichtheodoi3 img {
         margin-right: 0; /* Loại bỏ margin bên phải */
@@ -299,9 +312,90 @@ body {
 }
 
 /* Media query cho desktop (trên 1024px) */
+/* Media query cho desktop (trên 1024px) */
 @media (min-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px; /* Thêm padding để nội dung không sát viền */
+    }
+
     .service-group {
-        flex-direction: row;
-        align-items: flex-start; /* Đảm bảo các hộp không căn chỉnh chiều cao bằng nhau */
+        flex-direction: row; /* Đã có, giữ nguyên để Ngày 1, Ngày 2, Ngày 3 hiển thị ngang hàng */
+        align-items: flex-start;
+        gap: 20px; /* Đảm bảo khoảng cách giữa các ô */
+    }
+
+    /* Điều chỉnh các ô Ngày 1, Ngày 2, Ngày 3 */
+    .service-box1, .service-box2, .service-box3 {
+        flex: 1; /* Chia đều không gian cho 3 ô */
+        margin: 20px; /* Giữ margin để không sát viền */
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    /* Điều chỉnh ô Lưu Ý Chung */
+    .service-box4 {
+        margin: 20px;
+        padding: 20px;
+        width: calc(100% - 40px); /* Chiều rộng đầy đủ, trừ margin */
+    }
+
+    /* Điều chỉnh bố cục của phần chi tiết (hình ảnh và nội dung chữ) */
+    .lichtheodoi3 {
+        display: flex;
+        flex-direction: row; /* Hình ảnh và nội dung nằm ngang */
+        align-items: flex-start; /* Căn trên cùng */
+        gap: 20px; /* Khoảng cách giữa hình ảnh và nội dung */
+        margin-bottom: 20px;
+    }
+
+    /* Hình ảnh trong lichtheodoi3 */
+    .lichtheodoi3 img {
+        width: 150px; /* Kích thước cố định cho hình ảnh */
+        height: 150px;
+        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+        border-radius: 8px;
+        margin-right: 0; /* Bỏ margin-right vì đã dùng gap */
+    }
+
+    /* Nội dung chữ trong lichtheodoi3 */
+    .lichtheodoi3 div {
+        flex: 1; /* Nội dung chữ chiếm phần không gian còn lại */
+    }
+
+    /* Định dạng lại danh sách trong lichtheodoi3 */
+    .lichtheodoi3 ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .lichtheodoi3 li {
+        font-size: 1rem; /* Giảm kích thước chữ về mức hợp lý */
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    /* Đảm bảo tiêu đề và mô tả hiển thị rõ ràng */
+    .section-title {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    /* Hình ảnh chính của mỗi ngày */
+    .day-img {
+        width: 100%;
+        max-height: 200px; /* Tăng chiều cao tối đa để hình ảnh hiển thị rõ hơn */
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
     }
 }
