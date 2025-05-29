@@ -5,8 +5,6 @@
   
 }
 
-
-
 .intro h1{
   font-size: 36px;
   color: #333;
@@ -286,14 +284,20 @@
   border-radius: 10px;
   object-fit: cover;
 }
-
+.container1 {
+    max-width: 100%;
+    padding: 0;
+  }
 /* Responsive: khi màn hình lớn hơn 768px */
 @media (min-width: 768px) {
   .lichtheodoi {
     padding: 24px;
   }
   
-
+.container1 {
+    max-width: 100%;
+    padding: 0;
+  }
 .time8{
    width: 50%;
   margin-left:20%;
@@ -408,7 +412,7 @@
   border-radius: 8px;
   border-left:4px solid #3498db;
   box-shadow:0 2px 4px rgba(0,0,0,0.1);
-  width: 1400px;
+ width: 100%
  
 }
 * Header for Desktop */
