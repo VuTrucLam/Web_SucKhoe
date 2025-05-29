@@ -1,7 +1,8 @@
 *{
-  margin:0 auto;
+  margin:0 ;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
   
 }
 
@@ -150,7 +151,7 @@
   background-color: #27ae60;
 }
 .header1 {
-  width: 110%;
+  width: 100%;
   height: 60px;
   background-color: #96BFF5;
   display: flex;
@@ -165,8 +166,8 @@
 }
 
 .header1:hover {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   
 }
 
@@ -352,7 +353,7 @@
 /* Responsive: khi màn hình lớn hơn 1024px */
 @media (min-width: 1280px) {
   .container1 {
-    max-width: 100%;
+    max-width: 110%;
     padding: 0;
   }
    .lichtheodoi {
@@ -418,10 +419,11 @@
 * Header for Desktop */
   .header1 {
     width: 100%;
+    
     height: 80px;
     padding: 0 40px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 24px;  /* Giữ nguyên hoặc điều chỉnh */
+    border-bottom-right-radius: 24px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -457,7 +459,8 @@
 
   .dropdown-menu li:hover {
     background-color: transparent;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px 2px solid #007bff;
+   
   }
 
   .dropdown-menu a {
