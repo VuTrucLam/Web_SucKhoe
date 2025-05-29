@@ -19,60 +19,28 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 767px) {
-  /* Mobile view adjustments */
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    padding: 0 10px;
-  }
-
- 
- 
-
- 
-
- 
-}
-
 @media (min-width: 768px) {
   /* Tablet and desktop adjustments */
- 
- 
-
- 
-
-
   .appointment-section {
     padding: 24px;
+    padding-bottom: 100px; /* thêm dòng này để tránh bị che bởi bottom-nav */
+
   }
 }
 
 @media (min-width: 1024px) {
- 
-
- 
-
-
-
-
+  /* Large desktop adjustments */
+  .appointment-section {
+    padding: 32px;
+    padding-bottom: 100px; /* thêm dòng này để tránh bị che bởi bottom-nav */
+  }
 }
 
 /* The rest of the CSS remains unchanged */
 .appointment-section {
   padding: 20px;
+  padding-bottom: 100px; /* thêm dòng này để tránh bị che bởi bottom-nav */
+
 }
 
 .appointment-section .section-title {
