@@ -36,6 +36,7 @@ header h1 {
   position: absolute;
   right: 1rem;
   top: 1.2rem;
+  text-decoration: none;
 }
 .avatar-wrapper {
   text-align: center;
@@ -53,7 +54,7 @@ header h1 {
 .camera-icon {
   position: absolute;
   top: 70%;
-  left: 55%;
+  left: 58%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 50%;
@@ -169,4 +170,11 @@ header h1 {
 }
 .bottom-nav a:hover {
   color: #007bff; /* Màu khi hover (có thể tùy chỉnh) */
+}
+
+@media (min-width: 768px) {
+  .camera-icon {
+    top: 75%;
+    left: 52%;
+  }
 }

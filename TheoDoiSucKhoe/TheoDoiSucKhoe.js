@@ -361,14 +361,15 @@ function calculateSleepQuality() {
   sleepChart.data.datasets[0].data = [poor, awake, quality];
   sleepChart.update();
 
-  // Hiển thị chất lượng
-  if (quality > 50) {
-    qualityElement.innerText = 'Giấc ngủ của bạn tốt!';
+  // Hiển thị chất lượng giấc ngủ
+  if (quality >= 60) {
+    qualityElement.innerText = 'Giấc ngủ tốt';
     qualityElement.style.color = 'green';
+  } else if (quality >= 30) {
+    qualityElement.innerText = 'Giấc ngủ trung bình';
+    qualityElement.style.color = 'orange';
   } else {
-    qualityElement.innerText = 'Cần cải thiện giấc ngủ!';
+    qualityElement.innerText = 'Giấc ngủ kém';
     qualityElement.style.color = 'red';
   }
 }
-
-

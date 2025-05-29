@@ -191,22 +191,29 @@
 
       <div class="doctors-grid">
         <div class="doctor-card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="../IMAGES\bacsi2L.png" alt="Bác sĩ 1">
-              <h3>BS. Nguyễn Văn A</h3>
-            </div>
-            <div class="card-back">
-              <h3>BS. Nguyễn Văn A</h3>
-              <p><strong>• Chuyên khoa:</strong> Tim mạch</p>
-              <p><strong>• Học vị:</strong> Tiến sĩ Y khoa, Nghiên cứu sinh sau Tiến sĩ tại Đại học Tim mạch Quốc gia.</p>
-              <p><strong>• Kinh nghiệm:</strong> 20 năm kinh nghiệm công tác tại Viện Tim mạch Quốc gia, Trưởng khoa Nội Tim mạch.</p>
-              <p><strong>• Điểm mạnh:</strong> Chẩn đoán và điều trị chuyên sâu các bệnh lý mạch vành, can thiệp tim mạch ( đặt stent, nong mạch), điều trị suy tim nặng, bệnh cơ tim, viêm cơ tim.</p>
-              <p><strong>• Phương châm:</strong> "Trái tim khỏe mạnh là nền tảng của cuộc sống chất lượng. Tôi cam kết mang đến sự chăm sóc tim mạch toàn diện và tiên tiến nhất cho bệnh nhân."</p>
-              <button>Liên hệ</button>
-            </div>
-          </div>
-        </div>
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="../IMAGES/bacsi2L.png" alt="Bác sĩ 1">
+      <h3>BS. Nguyễn Văn A</h3>
+    </div>
+    <div class="card-back">
+      <h3>BS. Nguyễn Văn A</h3>
+      <p><strong>• Chuyên khoa:</strong> Tim mạch</p>
+      <p><strong>• Học vị:</strong> Tiến sĩ Y khoa, Nghiên cứu sinh sau Tiến sĩ tại Đại học Tim mạch Quốc gia.</p>
+      <p><strong>• Kinh nghiệm:</strong> 20 năm kinh nghiệm công tác tại Viện Tim mạch Quốc gia, Trưởng khoa Nội Tim mạch.</p>
+      <p><strong>• Điểm mạnh:</strong> Chẩn đoán và điều trị chuyên sâu các bệnh lý mạch vành, can thiệp tim mạch (đặt stent, nong mạch), điều trị suy tim nặng, bệnh cơ tim, viêm cơ tim.</p>
+      <p><strong>• Phương châm:</strong> "Trái tim khỏe mạnh là nền tảng của cuộc sống chất lượng. Tôi cam kết mang đến sự chăm sóc tim mạch toàn diện và tiên tiến nhất cho bệnh nhân."</p>
+      <button class="contact-button" onclick="contactDoctor(5)">Liên hệ</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function contactDoctor(doctorId) {
+    window.location.href = `../ChatChuyenGia/ChatChuyenGia.html?doctorId=${doctorId}`;
+  }
+</script>
+
 
         <div class="doctor-card">
           <div class="card-inner">
@@ -864,5 +871,6 @@
     <p class="note">*Chúng tôi sẽ gửi cho bạn bản cập nhật hàng tuần để quản lý công cụ tốt hơn</p>
   </div>
 </footer>
+<!-- <script src="chatdoctor.js"></script> -->
 </body>
 </html>

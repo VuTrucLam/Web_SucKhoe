@@ -1,50 +1,48 @@
-<!-- ChatChuyenGia.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat Với Chuyên Gia</title>
   <link rel="stylesheet" href="ChatChuyenGia.css">
-  <script src="ChatChuyenGia.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 <body>
-  <div class="chat-header">
-    <img src="/IMAGES/AvatarChuyenGiaO.png" class="avatar-small" alt="people">
+  <div class="chat-header" data-doctor-id="">
+    <img src="/IMAGES/AvatarChuyenGiaO.png" class="avatar-small" alt="Bác sĩ" id="doctor-avatar">
     <div class="header-info">
-      <h1>Dr. Emma Hall, M.D.</h1>
-      <span class="status">Đang hoạt động</span>
+      <h1 id="doctor-name">Đang tải...</h1>
+      <span class="status" id="doctor-status">Đang tải...</span>
     </div>
   </div>
+
   <div id="chat-container" class="chat-container">
     <!-- Tin nhắn sẽ hiển thị tại đây -->
   </div>
 
   <div class="group">
-  <div class="chat-input-area">
-  <button id="emoji-button"><i class="far fa-smile"></i></button>
-  <input type="text" id="user-input" placeholder="Nhập tin nhắn ở đây...">
-  <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-  <div id="emoji-picker" class="emoji-picker hidden">
-  <span>😀</span><span>😃</span><span>😄</span><span>😁</span><span>😆</span><span>😅</span><span>😂</span>
-  <span>😊</span><span>😇</span><span>😉</span><span>😍</span><span>😘</span><span>😜</span>
-  <span>🤔</span><span>😎</span><span>😢</span><span>😠</span><span>😴</span>
-  <span>👍</span><span>👎</span><span>❤️</span>
+    <div class="chat-input-area">
+      <button id="emoji-button"><i class="far fa-smile"></i></button>
+      <input type="text" id="messageInput" placeholder="Nhập tin nhắn ở đây...">
+      <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+      <div id="emoji-picker" class="emoji-picker hidden">
+        <span>😀</span><span>😃</span><span>😄</span><span>😁</span><span>😆</span><span>😅</span><span>😂</span>
+        <span>😊</span><span>😇</span><span>😉</span><span>😍</span><span>😘</span><span>😜</span>
+        <span>🤔</span><span>😎</span><span>😢</span><span>😠</span><span>😴</span>
+        <span>👍</span><span>👎</span><span>❤️</span>
+      </div>
+    </div>
   </div>
-  </div>
-  </div>
+
   <nav class="bottom-nav">
-      <ul>
-        <li><a href="/Home/home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
-        <li><a href="/ChatOptions/ChatOptions.html"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
-        <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
-        <li><a href="/HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="/Home/home.html"><img src="../IMAGES/homeiconL.png" alt="Home"> Trang chủ</a></li>
+      <li><a href="/ChatOptions/ChatOptions.html"><img src="../IMAGES/chaticonL.png" alt="Chat"> Chat</a></li>
+      <li><a href="#"><img src="../IMAGES/lichiconL.png" alt="About"> Quản lý</a></li>
+      <li><a href="/HoSoCuaToi/HoSoCuaToi.html"><img src="../IMAGES/profileiconL.png" alt="Contact"> Tôi</a></li>
+    </ul>
+  </nav>
+
+  <script src="load.js"></script>
 </body>
 </html>
-
-
-
