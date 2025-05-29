@@ -116,8 +116,9 @@ h1, h2 {
 }
 
 canvas#heartChart {
-  width: 100%;
-  height: 120px;
+  width: 100%; /* Giữ chiều rộng 100% */
+  height: 150px; /* Tăng chiều cao từ 120px lên 150px cho mobile */
+  max-width: 100%; /* Đảm bảo không vượt quá container */
 }
 
 .water-section {
@@ -388,17 +389,16 @@ canvas#bmiChart {
     align-items: flex-start;
     gap: 40px;
   }
-canvas#heartChart {
-    width: 100%; /* Giữ chiều rộng 100% */
-    height: 100px; /* Tăng chiều cao từ 100% lên 200px */
-    max-width: 100%;
-  }
+
   .container,
   .card-group {
     max-width: 800px;
     width: 100%;
   }
 
+.header{
+  width: 100%;
+}
   canvas#bmiChart {
     width: 100% !important;
     max-width: 100%;
@@ -412,51 +412,58 @@ canvas#heartChart {
   }
 
   .water-section {
-    justify-content: center; /* Căn giữa các phần tử */
-    gap: 50px; /* Giữ khoảng cách nhỏ trên desktop */
+    justify-content: center;
+    gap: 50px;
     max-width: 800px;
     width: 100%;
   }
 
   .glass {
     flex: 1;
-    max-width: 100px; /* Giữ chiều rộng nhỏ */
-    height: 140px; /* Giữ chiều cao nhỏ */
+    max-width: 100px;
+    height: 140px;
   }
 
   .hours {
-    height: 150px; /* Đảm bảo chiều cao khớp với .glass */
-    margin-right: 10px; /* Giữ khoảng cách nhỏ */
+    height: 150px;
+    margin-right: 10px;
   }
 
   .bars {
-    height: 140px; /* Giữ chiều cao nhỏ */
-    gap: 10px; /* Giữ khoảng cách nhỏ */
+    height: 140px;
+    gap: 10px;
   }
 
   .bar {
-    width: 20px; /* Giữ chiều rộng nhỏ */
+    width: 20px;
   }
 
   .sleep-tracker .chart-container {
-    max-width: none; /* Xóa giới hạn max-width */
-    width: 450px; /* Kích thước cố định trên desktop */
-    height: 450px; /* Kích thước cố định trên desktop */
-    margin: 0 auto 15px auto; /* Căn giữa */
+    max-width: none;
+    width: 450px;
+    height: 450px;
+    margin: 0 auto 15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-.card-container {
-    flex-direction: row; /* Giữ hàng ngang trên desktop */
-    gap: 40px; /* Tăng khoảng cách trên desktop để dễ nhìn */
+
+  .card-container {
+    flex-direction: row;
+    gap: 40px;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 
   .card {
-    max-width: 300px; /* Tăng chiều rộng tối đa trên desktop */
+    max-width: 300px;
   }
-
+}
+@media (min-width: 768px) {
+  canvas#heartChart {
+    width: 100%;
+    height: 200px; /* Desktop */
+    max-width: 100%;
+  }
 }
