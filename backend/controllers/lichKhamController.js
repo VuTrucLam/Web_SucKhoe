@@ -2,17 +2,7 @@ const db = require('../db');
 
 // Thêm lịch khám bệnh mới
 exports.addLichKham = (req, res) => {
-  const {
-    date,
-    time,
-    status,
-    reason,
-    doctor,
-    hospital,
-    hospital_contact,
-    department,
-    is_periodic,
-    note
+  const {date,time,status,reason,doctor,hospital,hospital_contact,department,is_periodic,note
   } = req.body;
 
   if (!date || !time || !status || !doctor || !hospital) {

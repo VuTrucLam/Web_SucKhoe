@@ -12,59 +12,20 @@ body {
   padding: 0;
 }
 
-.container {
+.container1 {
   width: 100%;
   padding: 0;
   margin: 0 auto;
 }
 
-/* Header Styles */
-.header{
-  display:flex;
-  justify-self: space-between;
-  align-items: center;
-  height: 80px;
-  width:450px;
-  background-color: #96BFF5;
-  padding:0 20px;
-  color:#fff;
-  position:relative;
-  z-index:1000;
-  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-}
 
-.logo {
-  height: 70px;
-  width: 70px;
-}
 
-.dropdown-menu {
-  display: flex;
-}
 
-.dropdown-menu ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.dropdown-menu li {
-  padding: 0;
-}
 
-.dropdown-menu a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
 
-.dropdown-menu a:hover {
-  color: #000; /* Matches the image's hover effect */
-}
+
+
 
 /* Responsive Design */
 @media (max-width: 767px) {
@@ -78,50 +39,21 @@ body {
     padding: 0 10px;
   }
 
-  .logo {
-    height: 50px;
-    width: 50px;
-  }
+ 
+ 
 
-  .dropdown-menu {
-    display: flex;
-  }
+ 
 
-  .dropdown-menu ul {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .dropdown-menu li {
-    padding: 0;
-  }
-
-  .dropdown-menu a {
-    font-size: 14px;
-    font-weight: bold;
-  }
+ 
 }
 
 @media (min-width: 768px) {
   /* Tablet and desktop adjustments */
-  .header {
-    width: 100%;
-    height: 80px;
-    padding: 0 20px;
-  }
+ 
+ 
 
-  .logo {
-    height: 70px;
-    width: 70px;
-  }
+ 
 
-  .dropdown-menu ul {
-    gap: 20px;
-  }
-
-  .dropdown-menu a {
-    font-size: 16px;
-  }
 
   .appointment-section {
     padding: 24px;
@@ -129,52 +61,13 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 100%;
-    padding: 0;
-  }
+ 
 
-  .header {
-    width: 100%;
-    height: 80px;
-    padding: 0 20px;
-  }
+ 
 
-  .dropdown-menu {
-    position: static;
-    order: 2;
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-start;
-    background-color: transparent;
-    box-shadow: none;
-    width: auto;
-  }
 
-  .dropdown-menu ul {
-    flex-direction: row;
-    margin: 0 20px;
-  }
 
-  .dropdown-menu li {
-    padding: 0 20px;
-    line-height: 80px;
-    font-size: 16px;
-  }
 
-  .dropdown-menu li:hover {
-    border-bottom: 2px solid #007bff;
-    background-color: transparent;
-  }
-
-  .dropdown-menu a {
-    font-size: 16px;
-    color: #fff;
-  }
-
-  .header:hover .dropdown-menu {
-    display: flex;
-  }
 }
 
 /* The rest of the CSS remains unchanged */
