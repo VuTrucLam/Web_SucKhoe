@@ -151,7 +151,7 @@
 .llu:hover {
   background-color: #27ae60;
 }
-.header {
+.header1 {
   width: 110%;
   height: 60px;
   background-color: #96BFF5;
@@ -166,7 +166,7 @@
   z-index: 1000;
 }
 
-.header:hover {
+.header1:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   
@@ -215,7 +215,7 @@
 }
 
 /* Hiện menu khi hover vào header */
-.header:hover .dropdown-menu {
+.header1:hover .dropdown-menu {
   display: block;
 }
 .bottom-nav {
@@ -412,7 +412,7 @@
  
 }
 * Header for Desktop */
-  .header {
+  .header1 {
     width: 100%;
     height: 80px;
     padding: 0 40px;
@@ -461,7 +461,7 @@
     color: white;
   }
 
-  .header:hover .dropdown-menu {
+  .header1:hover .dropdown-menu {
     display: flex;
   }
 }
