@@ -19,7 +19,7 @@ body {
 
 .panel {
     position: relative;
-    flex: 1; /* Mỗi phần chiếm đều 20% ban đầu (1/5) */
+    flex: 1;
     height: 100%;
     background-size: cover;
     background-position: center;
