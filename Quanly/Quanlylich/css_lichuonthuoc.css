@@ -15,9 +15,6 @@ body {
   padding: 5px;
 }
 
-
-
-
 /* Responsive nav */
 @media (max-width: 768px) {
   .menu-toggle {

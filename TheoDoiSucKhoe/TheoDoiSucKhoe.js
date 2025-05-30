@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     options: {
       animation: false,
-      responsive: false,
+      responsive: true,
       scales: {
         y: { min: 60, max: 140 }
       },
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const totalText = document.getElementById("total");
 
   let state = JSON.parse(localStorage.getItem("water-tracker") || "[]");
-
+//trạng thái hiện tại
   function renderWater() {
     barsContainer.innerHTML = "";
     hoursContainer.innerHTML = "";
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     water.style.height = Math.min(percent, 100) + "%";
     totalText.textContent = (totalMl / 1000).toFixed(2) + " lít";
   }
-
+//nhấp uống ch uống
   function toggleWater(index) {
     const found = state.indexOf(index);
     if (found >= 0) state.splice(found, 1);
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   renderWater();
 });
-
+//huyết áp & đường huyết
 const bpCtx = document.getElementById('bp-chart').getContext('2d');
     const sugarCtx = document.getElementById('sugar-chart').getContext('2d');
 

@@ -1,4 +1,4 @@
-/* Tổng thể */
+
 body {
   margin: 0;
   font-family: Pridi, sans-serif;
@@ -10,10 +10,6 @@ body {
   padding-right: 20px;
   box-sizing: border-box;
 }
-
-
-
-/* Header */
 .header {
   width: 100%;
   height: 60px;

@@ -3,7 +3,7 @@ const db = require('../db');
 exports.addTheoDoiDieuTri = (req, res) => {
   const { ngay_bat_dau, ngay_ket_thuc, trang_thai, nhiet_do, huyet_ap, nhip_tim } = req.body;
 
-  console.log("Dữ liệu nhận được:", req.body); // 👈 thêm dòng này
+  console.log("Dữ liệu nhận được:", req.body); 
 
   if ( !ngay_bat_dau || !ngay_ket_thuc) {
     
