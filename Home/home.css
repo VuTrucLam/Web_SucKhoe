@@ -38,7 +38,6 @@ body {
 .login-btn {
   background-color: white;
   color: #007BFF;
-  border: none;
   padding: 6px 12px;
   border-radius: 0px 0px 20px;
   font-weight: bold;
@@ -138,6 +137,8 @@ body {
 .bottom-nav a:hover {
   color: #007bff; /* Màu khi hover (có thể tùy chỉnh) */
 }
+
+/* ảnh lớn trang đầu tiên */
 .hero-box {
   position: absolute;   
   top: 80px;
@@ -161,32 +162,27 @@ body {
 
 .intro {
   width: 100%;
+  font-weight: bold;
+  font-family: Pridi;
 }
 
-/* Intro */
+
+/* Tiêu đề */
 .intro h1 {
   font-size: 20px;
-  font-weight: bold;
   margin-top: 20px;
-  font-family: Pridi;
   
 }
 
 .intro h2 {
   font-size: 18px;
-  font-weight: bold;
-  font-family: Pridi;
   margin-bottom: 8px;
 }
 
 .intro h3 {
   margin-top: 8px;
   font-size: 24px;
-  font-weight: bold;
-  font-family: Poppins;
-  background: linear-gradient(to right, #4A9BDA, #193E9E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#007BFF;
 }
 
 .cta {
@@ -223,9 +219,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   font-family: Poppins;
-  background: linear-gradient(to right, #4A9BDA, #193E9E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#007BFF;
 }
 
 .join-btn {
@@ -245,9 +239,9 @@ body {
 }
 
 .about {
-  padding: 0 16px 0 0; /* Remove left padding to shift content to the left */
+  padding: 0 16px 0 0; /* Remove left padding to shift content to the left  */
   width: 100%;
-}
+} 
 
 .about h2 {
   text-transform: uppercase;
@@ -303,9 +297,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   font-family: Poppins;
-  background: linear-gradient(to right, #4A9BDA, #193E9E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#007BFF;
 }
 .why-choose {
   background-color: #fff;
@@ -330,24 +322,12 @@ body {
   align-items: center;
 }
 
-.why-column {
-  flex: 1;
-  padding: 0 10px;
-  text-align: left;
-  font-size: 16px;
-}
 
-/* Ảnh trong các cột */
 .why-item img {
   width: 40px;
   height: 40px;
 }
-
-.divider {
-  width: 2px;
-  background-color: white;
-  height: 90px;
-}
+/* nền trắng, text căn giữa */
 .main-services {
   width: 100%;
   text-align: center;
@@ -390,10 +370,6 @@ body {
   overflow: hidden;
 }
 
-/* .service-icon img {
-  width: 60%;
-  height: auto;
-} */
 
 .service-box h3 {
   font-size: 20px;
@@ -422,100 +398,21 @@ body {
   color: white;
 }
 
-.testimonial {
-  text-align: center;
-  padding: 0px 20px;
-  background-color: #fff;
-}
-
-.testimonial h2 span {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Poppins;
-  color: #2663d4;
-}
-
-.testimonial p {
-  font-size: 16px;
-  color: #333;
-  font-family: Poppins;
-  margin-bottom: 30px;
-}
-
-.testimonial-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  position: relative;
-}
-
-.testimonial-content {
-  background-color: #f5f7fa;
-  padding: 30px 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-  position: relative;
-}
-
-.testimonial-box {
-  width: 100%;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.quote-icon {
-  font-size: 40px;
-  color: #1a1a1a;
-  margin-bottom: 10px;
-}
-
-.feedback {
-  font-size: 16px;
-  font-family: Poppins;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Poppins;
-  gap: 12px;
-}
-
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.arrow {
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #333;
-  transition: transform 0.2s;
-}
-
-.arrow:hover {
-  transform: scale(1.2);
-}
 
 .footer {
   background-color: #2F80ED;
   width: 100%;
   color: white;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  /* margin: 20px 0px 80px; */
   margin-bottom: 45px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 
@@ -542,24 +439,6 @@ body {
   width: 90%;
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.footer-column p {
-  display: flex;
-  align-items: center; /* Căn giữa icon và text */
-  gap: 8px;             /* Khoảng cách giữa icon và chữ */
-  margin: 4px 0;
-}
-
-.footer-column a{
-  font-family: Poppins;
-}
 .icon {
   width: 20px;
   height: 20px;
@@ -571,7 +450,7 @@ body {
   font-family: Poppins;
 }
 
-.footer-column p {
+ .footer-column p {
   margin: 6px 0;
   font-size: 14px;
   font-family: Poppins;
@@ -580,7 +459,7 @@ body {
 .footer-column a {
   text-decoration: none; /* Bỏ gạch chân */
   color: white;           /* Giữ màu trắng */
-}
+} 
 
 .footer-subscribe {
   background-color: rgba(255, 255, 255, 0.1);
@@ -638,16 +517,7 @@ html, body {
   overflow-x: hidden; /* Ngăn tràn ngang */
 }
   /* Header */
-  .header {
-    width: 100%;
-    height: 80px;
-    padding: 0 40px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Logo bên trái, login-btn bên phải */
-  }
+ 
 
   .logo {
     width: 80px;
@@ -761,7 +631,7 @@ html, body {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* <- Thêm dòng này */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     cursor: pointer; /* Thêm hiệu ứng chuột */
   }
 
@@ -867,43 +737,11 @@ html, body {
   }
 
   .service-box h3 {
-    font-size: 22px;
-  }
-
-  .service-box p {
-    font-size: 16px;
-  }
-
-  /* Testimonial */
-  .testimonial {
-    padding: 40px;
-    width: 100%;
-  }
-  .testimonial-box {
-    width: 100%;
-  }
-  .testimonial h2 span {
     font-size: 30px;
   }
 
-  .testimonial p {
-    font-size: 20px;
-  }
-
-  .testimonial-content {
-    max-width: 600px;
-    padding: 40px;
-    border-radius: 20px;
-  }
-
-
-  .avatar {
-    width: 60px;
-    height: 60px;
-  }
-
-  .arrow {
-    font-size: 36px;
+  .service-box p {
+    font-size: 30px;
   }
 
   /* Footer */
