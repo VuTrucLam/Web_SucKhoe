@@ -103,7 +103,7 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-.heart-rate-info .bpm {
+.heart-rate-info .bpm { /*giái trị nhịp tim*/
   font-size: 24px;
   color: #f44336;
   margin: 5px 0 0 0;
@@ -116,9 +116,9 @@ h1, h2 {
 }
 
 canvas#heartChart {
-  width: 100%; /* Giữ chiều rộng 100% */
-  height: 150px; /* Tăng chiều cao từ 120px lên 150px cho mobile */
-  max-width: 100%; /* Đảm bảo không vượt quá container */
+  width: 100%; 
+  height: 150px; 
+  max-width: 100%; /*Đảm bảo không vượt quá container*/
 }
 
 .water-section {
@@ -182,7 +182,7 @@ canvas#heartChart {
 
 .hour {
   font-size: 12px;
-  cursor: pointer;
+  cursor: pointer;/*nhấn đc*/
 }
 
 /* Card & Input */
@@ -434,7 +434,7 @@ canvas#bmiChart {
     gap: 10px;
   }
 
-  .bar {
+  .bar {/*cột*/
     width: 20px;
   }
 
@@ -458,12 +458,5 @@ canvas#bmiChart {
 
   .card {
     max-width: 300px;
-  }
-}
-@media (min-width: 768px) {
-  canvas#heartChart {
-    width: 100%;
-    height: 200px; /* Desktop */
-    max-width: 100%;
   }
 }
