@@ -294,13 +294,9 @@
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   margin-bottom: 20px;
-  background-color: #fff; /* Ensure no blue background */
+  background-color: #fff; 
 }
 
-/* Style for the chart canvas */
-
-
-/* Style for the chart title and text */
 .lichtheodoi1 {
   font-size: 1.5rem;
   color: #2c3e50;

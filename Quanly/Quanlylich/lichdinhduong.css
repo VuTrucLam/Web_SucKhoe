@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: auto;
 }
 
 body {
@@ -11,48 +12,13 @@ body {
     color: #333;
 }
 
-.container {
+.container1 {
     width: 100%;
     margin: 0 auto;
-    /* padding-bottom: 100px; */
+    padding-bottom: 100px;
 
 }
 
-.header {
-    width: 100%;
-    height: 80px;
-    background-color: #96BFF5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1000;
-}
-
-.logo {
-    height: 50px;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.dropdown-menu a:hover {
-    color: #0056b3;
-}
 
 .intro {
     text-align: center;
@@ -148,47 +114,13 @@ body {
     background-color: #27ae60;
 }
 
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #E4E9FA;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-}
 
-.bottom-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    
-    width: 100%;
-}
 
-.bottom-nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.bottom-nav img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 5px;
-}
 
-.bottom-nav a:hover {
-    color: #007bff;
-}
+
+
+
 
 .service-group {
     display: flex;
@@ -212,40 +144,31 @@ body {
 .hidden-content.show {
     display: block;
 }
-.dropdown-menu {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #96BFF5;
-    padding: 10px 0;
-}
 
-.dropdown-menu.active {
-    display: block;
-}
 
 /* Media query cho mobile (dưới 768px) */
 @media (max-width: 768px) {
     .intro {
-        margin: 0; /* Sát viền trên mobile */
-        padding: 15px; /* Giảm padding nhưng vẫn giữ khoảng cách nội dung */
-        border-radius: 0; /* Loại bỏ bo góc để sát viền */
+        margin: 0; 
+        padding: 15px; 
+        border-radius: 0; 
     }
 
-    .service-box1, .service-box2, .service-box3, .service-box4 {
-        margin: 10px; /* Sát viền trên mobile */
-        padding: 15px; /* Giảm padding nhưng vẫn giữ khoảng cách nội dung */
-        border-radius: 0; /* Loại bỏ bo góc để sát viền */
+    .service-box1, .service-box2, .service-box3 {
+        margin: 10px; 
+        padding: 15px; 
+        border-radius: 0; 
     }
-
+.service-box4 {
+        width: 100%; 
+        margin: 10px;
+        padding: 15px;
+        border-radius: 0;
+ } /* Loại bỏ bo góc nếu cần */
     .lichtheodoi3 {
-        flex-direction: column; /* Hình ảnh và nội dung xếp dọc */
-        padding-left: 0; /* Loại bỏ padding bên trái */
-        align-items: center; /* Căn giữa hình ảnh và nội dung */
+        flex-direction: column;
+        padding-left: 0; 
+        align-items: flex-start;
     }
     .container {
     width: 100%;
@@ -255,29 +178,12 @@ body {
     }
 
     .lichtheodoi3 img {
-        margin-right: 0; /* Loại bỏ margin bên phải */
-        margin-bottom: 10px; /* Thêm margin dưới để cách nội dung */
-        width: 120px; /* Tăng nhẹ kích thước hình ảnh trên mobile */
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        width: 120px; 
         height: 120px;
     }
 
-    .bottom-nav {
-        padding: 5px 0; /* Giảm padding trên mobile */
-    }
-
-    .bottom-nav a {
-        font-size: 12px; /* Giảm kích thước chữ trên mobile */
-    }
-
-    .header {
-        justify-content: center; /* Căn giữa các phần tử */
-        position: relative;
-    }
-
-    .logo {
-        position: absolute;
-        left: 15px; /* Đặt logo bên trái */
-    }
 
     .hamburger {
         display: flex; /* Hiện hamburger menu trên mobile */
@@ -285,86 +191,60 @@ body {
         right: 15px; /* Đặt hamburger bên phải */
     }
 
-    .dropdown-menu {
-        display: none; /* Ẩn menu mặc định */
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #96BFF5;
-        padding: 10px 0;
-    }
 
-    .dropdown-menu.active {
-        display: block; /* Hiện menu khi nhấn hamburger */
-    }
-
-    .dropdown-menu ul {
-        flex-direction: column; /* Chuyển menu thành dạng dọc */
-        gap: 10px;
-        text-align: center;
-    }
-
-    .dropdown-menu a {
-        font-size: 14px; /* Giảm kích thước chữ cho dễ nhìn */
-    }
+ 
 
 }
 
-/* Media query cho desktop (trên 1024px) */
-/* Media query cho desktop (trên 1024px) */
+
 @media (min-width: 1024px) {
     .container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 20px; /* Thêm padding để nội dung không sát viền */
+        padding: 0 20px;
     }
 
     .service-group {
-        flex-direction: row; /* Đã có, giữ nguyên để Ngày 1, Ngày 2, Ngày 3 hiển thị ngang hàng */
+        flex-direction: row; 
         align-items: flex-start;
-        gap: 20px; /* Đảm bảo khoảng cách giữa các ô */
+        gap: 20px;
     }
 
     /* Điều chỉnh các ô Ngày 1, Ngày 2, Ngày 3 */
     .service-box1, .service-box2, .service-box3 {
-        flex: 1; /* Chia đều không gian cho 3 ô */
-        margin: 20px; /* Giữ margin để không sát viền */
+        flex: 1; 
+        margin: 20px; 
         padding: 20px;
         border-radius: 8px;
     }
-
-    /* Điều chỉnh ô Lưu Ý Chung */
     .service-box4 {
         margin: 20px;
         padding: 20px;
-        width: calc(100% - 40px); /* Chiều rộng đầy đủ, trừ margin */
+        width: calc(100% - 40px);
     }
 
-    /* Điều chỉnh bố cục của phần chi tiết (hình ảnh và nội dung chữ) */
+    
     .lichtheodoi3 {
         display: flex;
-        flex-direction: row; /* Hình ảnh và nội dung nằm ngang */
-        align-items: flex-start; /* Căn trên cùng */
-        gap: 20px; /* Khoảng cách giữa hình ảnh và nội dung */
+        flex-direction: row;
+        align-items: flex-start; 
+        gap: 20px; 
         margin-bottom: 20px;
     }
 
     /* Hình ảnh trong lichtheodoi3 */
     .lichtheodoi3 img {
-        width: 150px; /* Kích thước cố định cho hình ảnh */
+        width: 150px; 
         height: 150px;
-        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+        object-fit: cover; 
         border-radius: 8px;
-        margin-right: 0; /* Bỏ margin-right vì đã dùng gap */
+        margin-right: 0; 
     }
 
     /* Nội dung chữ trong lichtheodoi3 */
     .lichtheodoi3 div {
-        flex: 1; /* Nội dung chữ chiếm phần không gian còn lại */
+        flex: 1; 
     }
-
-    /* Định dạng lại danh sách trong lichtheodoi3 */
     .lichtheodoi3 ul {
         list-style: disc;
         padding-left: 20px;
@@ -372,12 +252,12 @@ body {
     }
 
     .lichtheodoi3 li {
-        font-size: 1rem; /* Giảm kích thước chữ về mức hợp lý */
+        font-size: 1rem; 
         color: #333;
         margin-bottom: 8px;
     }
 
-    /* Đảm bảo tiêu đề và mô tả hiển thị rõ ràng */
+    
     .section-title {
         font-size: 1.5rem;
         color: #2c3e50;
@@ -389,11 +269,9 @@ body {
         color: #555;
         margin-bottom: 20px;
     }
-
-    /* Hình ảnh chính của mỗi ngày */
     .day-img {
         width: 100%;
-        max-height: 200px; /* Tăng chiều cao tối đa để hình ảnh hiển thị rõ hơn */
+        max-height: 200px; 
         object-fit: cover;
         border-radius: 8px;
         margin-bottom: 15px;
